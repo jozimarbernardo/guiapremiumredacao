@@ -1,0 +1,2160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 Supertemas ENEM 2025 - e-book completo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --primary: #6366f1; --secondary: #ec4899; --accent: #14b8a6; --dark: #1e293b; --light: #f8fafc;
+            --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            --gradient-4: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+            --shadow: 0 10px 30px rgba(0,0,0,0.1); --shadow-hover: 0 15px 40px rgba(0,0,0,0.15);
+        }
+        html {
+            scroll-behavior: smooth; /* Garante a rolagem suave */
+        }
+        body { font-family: 'Inter', sans-serif; line-height: 1.6; color: var(--dark); background: linear-gradient(180deg, #f8fafc 0%, #e0e7ff 100%); overflow-x: hidden; }
+        h1, h2, h3, h4 { font-family: 'Poppins', sans-serif; font-weight: 700; }
+        .icon { width: 1.5rem; height: 1.5rem; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; display: inline-block; vertical-align: middle; }
+        .cover { min-height: 100vh; background: var(--gradient-1); display: flex; align-items: center; justify-content: center; text-align: center; color: white; padding: 2rem; position: relative; overflow: hidden; }
+        .cover::before { content: ''; position: absolute; width: 200%; height: 200%; background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px); background-size: 50px 50px; animation: float 20s linear infinite; }
+        @keyframes float { 0% { transform: translate(0, 0); } 100% { transform: translate(50px, 50px); } }
+        .cover-content { position: relative; z-index: 1; max-width: 800px; }
+        .cover h1 { font-size: clamp(2.5rem, 8vw, 4.5rem); font-weight: 800; margin-bottom: 1rem; text-shadow: 0 4px 20px rgba(0,0,0,0.2); animation: slideDown 1s ease-out; display: flex; align-items: center; justify-content: center; gap: 1rem; flex-wrap: wrap; }
+        .cover h1 .icon { width: clamp(3rem, 10vw, 5rem); height: clamp(3rem, 10vw, 5rem); }
+        .cover .subtitle { font-size: clamp(1.2rem, 3vw, 1.8rem); font-weight: 300; opacity: 0.95; margin-bottom: 2rem; animation: slideUp 1s ease-out 0.3s both; }
+        .cover .author { font-size: 1.1rem; font-weight: 500; opacity: 0.9; animation: fadeIn 1s ease-out 0.6s both; margin-top: 2rem; }
+        .cover-content > div {
+    display: flex;
+    flex-wrap: wrap; /* Permite quebrar a linha, se necessário */
+    justify-content: center; /* Centraliza os badges */
+    align-items: center;
+    gap: 0.5rem; /* Este será o novo espaçamento entre os badges */
+}
+        @keyframes slideDown { from { opacity: 0; transform: translateY(-50px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes slideUp { from { opacity: 0; transform: translateY(50px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        /* --- NOVO: Bloco de Alinhamento Justificado --- */
+.subsection > p,
+.card-content,
+.strategy-card .card-content,
+.thesis-box,
+.argument p,
+.intervention-item p {
+    text-align: justify;
+}
+/* --- Fim do Bloco --- */
+.badge { 
+    display: inline-flex; 
+    align-items: center; 
+    gap: 0.5rem; 
+    background: rgba(255,255,255,0.2); 
+    padding: 0.4rem 1rem; /* Padding vertical e horizontal reduzido */
+    border-radius: 50px; 
+    font-size: 0.85rem; /* Fonte levemente reduzida */
+    font-weight: 600; 
+    backdrop-filter: blur(10px);}
+.cover .scroll-down {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.75rem 2rem;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+    animation: fadeIn 1s ease-out 0.9s both; /* Usa a animação 'fadeIn' que já existe */
+}
+.cover .scroll-down:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+}
+        .badge .icon { width: 20px; height: 20px; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 3rem 1.5rem; }
+        .toc { background: white; border-radius: 20px; padding: 3rem; margin: 3rem 0; box-shadow: var(--shadow); }
+        .toc h2 { font-size: 2.5rem; color: var(--primary); margin-bottom: 2rem; text-align: center; display: flex; align-items: center; justify-content: center; gap: 1rem; }
+        .toc-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+        .toc-item { background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%); padding: 1.5rem; border-radius: 15px; cursor: pointer; transition: all 0.3s ease; border: 2px solid transparent; display: flex; align-items: center; gap: 1rem; }
+        .toc-item:hover { transform: translateY(-5px); box-shadow: var(--shadow-hover); border-color: var(--primary); }
+        .toc-number { display: flex; align-items: center; justify-content: center; background: var(--gradient-1); color: white; min-width: 40px; height: 40px; border-radius: 50%; font-weight: 700; font-size: 0.9rem; }
+        .toc-title { font-weight: 600; font-size: 1.1rem; color: var(--dark); flex: 1; }
+        .theme-section { background: white; border-radius: 20px; padding: 3rem; margin: 3rem 0; box-shadow: var(--shadow); scroll-margin-top: 2rem; }
+        .theme-header { display: flex; align-items: center; margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 3px solid #e0e7ff; gap: 1rem; }
+        .theme-number { font-size: 3rem; font-weight: 800; background: var(--gradient-1); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .theme-title { font-size: 2rem; color: var(--dark); flex: 1; }
+        .context-badge { display: inline-flex; align-items: center; /* gap: 0.5rem; */ background: var(--gradient-2); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.85rem; font-weight: 600; margin-right: 0.5rem; margin-top: 1.25rem; }
+        .context-badge .icon { display: none; }
+        .subsection { margin: 2.5rem 0; }
+        .subsection-title { font-size: 1.5rem; color: var(--primary); margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.75rem; }
+        .subsection-title .icon { width: 28px; height: 28px; }
+        .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1rem; }
+        .card { background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%); padding: 1.5rem; border-radius: 15px; border-left: 4px solid var(--primary); transition: all 0.3s ease; }
+        .card:hover { transform: translateX(5px); box-shadow: var(--shadow); }
+        .card-title { font-weight: 600; color: var(--primary); margin-bottom: 0.5rem; font-size: 1.1rem; display: flex; align-items: center; gap: 0.5rem; }
+        .card-title .icon { width: 20px; height: 20px; }
+        .card-content { color: #475569; font-size: 0.95rem; }
+        .strategy-card { background: linear-gradient(135deg, #fdf4ff 0%, #f3e8ff 100%); border: 2px solid #e9d5ff; border-left: 5px solid var(--secondary); padding: 1.5rem; border-radius: 15px; margin-top: 2rem; }
+        .strategy-card .card-title { color: var(--secondary); font-size: 1.2rem; margin-bottom: 1rem; }
+        .strategy-card .card-content { color: #5b21b6; font-size: 1rem; line-height: 1.7; }
+        .strategy-card .card-content strong { color: #a21caf; }
+        .thesis-box { background: #4facfe; color: white; padding: 2rem; border-radius: 15px; margin: 1.5rem 0; font-size: 1.1rem; line-height: 1.8; box-shadow: var(--shadow); }
+        .argument { background: white; border: 2px solid #e0e7ff; border-radius: 15px; padding: 2rem; margin: 1.5rem 0; transition: all 0.3s ease; }
+        .argument p { line-height: 1.7; color: #334155; }
+        .argument:hover { border-color: var(--primary); box-shadow: var(--shadow); }
+        .argument-header { font-size: 1.3rem; font-weight: 700; color: var(--primary); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+        .argument-category { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--gradient-4); color: white; padding: 0.3rem 1rem; border-radius: 20px; font-size: 0.85rem; font-weight: 600; margin-bottom: 1rem; }.intervention-box { background: var(--gradient-1); color: white; padding: 2rem; border-radius: 15px; margin: 1.5rem 0; box-shadow: var(--shadow); }
+        .intervention-item { background: rgba(255,255,255,0.2); backdrop-filter: blur(10px); padding: 1rem; border-radius: 10px; margin: 1rem 0; }
+        .intervention-label { font-weight: 700; font-size: 1.1rem; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem; }
+        .summary-table { width: 100%; border-collapse: collapse; margin: 2rem 0; background: white; border-radius: 15px; overflow: hidden; box-shadow: var(--shadow); }
+        .summary-table th { background: var(--gradient-1); color: white; padding: 1rem; text-align: left; font-weight: 600; }
+        .summary-table td { padding: 1rem; border-bottom: 1px solid #e0e7ff; }
+        .summary-table tr:hover { background: #f8fafc; }
+        .tips-box { background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); padding: 2rem; border-radius: 15px; margin: 2rem 0; border-left: 5px solid #f59e0b; }
+        .tips-title { font-size: 1.3rem; font-weight: 700; color: #92400e; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+        .tips-list { list-style: none; padding: 0; }
+        .tips-list li { padding: 0.75rem 0; color: #78350f; font-weight: 500; display: flex; align-items: flex-start; gap: 0.75rem; }
+        .tips-list li .icon { width: 20px; height: 20px; margin-top: 2px; flex-shrink: 0; }
+        .pro-tip-box { background: linear-gradient(135deg, #eef2ff 0%, #dbeafe 100%); border: 2px solid #c7d2fe; border-left: 5px solid var(--primary); padding: 2rem; border-radius: 15px; margin: 2rem 0; }
+        .pro-tip-box .tips-title { color: #312e81; font-size: 1.4rem; }
+        .pro-tip-box .tips-list li { color: #4338ca; font-size: 1.05rem; }
+        @media (max-width: 768px) { .cover h1 { font-size: 2.5rem; } .cover .subtitle { font-size: 1.2rem; } .container { padding: 2rem 1rem; } .theme-section { padding: 2rem 1.5rem; } .theme-title { font-size: 1.5rem; } .toc { padding: 2rem 1.5rem; } .card-grid { grid-template-columns: 1fr; } .strategy-card, .pro-tip-box { padding: 1.5rem; } }
+        @media print { .cover { page-break-after: always; } .theme-section { page-break-inside: avoid; } }
+        .progress-bar { position: fixed; top: 0; left: 0; height: 4px; background: var(--gradient-1); z-index: 9999; transition: width 0.1s ease; }
+        .back-to-top { position: fixed; bottom: 2rem; right: 2rem; background: var(--gradient-1); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: var(--shadow); opacity: 0; transition: all 0.3s ease; z-index: 1000; }
+        .back-to-top.visible { opacity: 1; }
+        .back-to-top:hover { transform: translateY(-5px); }
+
+        /* --- NOVO: Menu de Navegação Flutuante --- */
+        .floating-nav {
+            position: fixed;
+            left: 2rem;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+            opacity: 0; /* Começa invisível */
+            transition: all 0.3s ease;
+            display: block; /* Alterado de 'none' para 'block' para o JS controlar via 'visible' */
+        }
+
+        .floating-nav.visible {
+            opacity: 1; /* O JS vai controlar isso */
+        }
+
+        .floating-nav a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.9); /* Fundo branco semi-transparente */
+            color: var(--primary); /* Ícone na cor primária */
+            border-radius: 50%;
+            margin-bottom: 0.75rem;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .floating-nav a:hover {
+            transform: scale(1.1) translateX(5px);
+            background: white;
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .floating-nav a .icon {
+            width: 24px;
+            height: 24px;
+            stroke: var(--primary);
+        }
+
+        /* ================================================================
+        MUDANÇA PROFISSIONAL: Menu Mobile Flutuante (Toggle)
+        ================================================================
+        */
+        @media (max-width: 900px) {
+            .floating-nav {
+                /* Desativa a posição lateral do desktop */
+                left: auto;
+                top: auto;
+                transform: none; 
+                
+                /* Reposiciona para o canto inferior direito e esconde */
+                bottom: 6rem; /* Fica acima do novo botão */
+                right: 1.5rem;
+                flex-direction: column; /* Volta a ser vertical */
+                align-items: flex-end; /* Alinha os itens à direita */
+                
+                /* Oculta o menu verticalmente no mobile, mas com efeito de transição */
+                opacity: 0;
+                visibility: hidden;
+                max-height: 0;
+                padding: 0;
+                margin: 0;
+                transition: opacity 0.3s ease, max-height 0.3s ease, padding 0.3s ease;
+            }
+            
+            /* Quando a classe 'active' for adicionada pelo JS, o menu aparece */
+            .floating-nav.active {
+                opacity: 1;
+                visibility: visible;
+                max-height: 500px; /* Um valor alto para expandir */
+                padding: 1rem 0.5rem;
+            }
+            
+            /* Estilo dos links no menu mobile */
+            .floating-nav a {
+                background: var(--gradient-1); /* Destaca os links no mobile */
+                width: 45px;
+                height: 45px;
+                margin: 0.5rem 0;
+            }
+
+            /* Muda a cor do ícone dos links para branco (melhor contraste) */
+            .floating-nav a .icon {
+                stroke: white;
+            }
+            
+            /* Remove o botão 'voltar ao topo' no mobile para ser o novo botão flutuante */
+            #backToTop {
+                display: none !important;
+            }
+        }
+        
+        /* NOVO CSS: Estilo do Botão Toggle Mobile */
+        .mobile-toggle-btn {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--gradient-2); /* Cor de destaque (rosa) */
+            color: white;
+            width: 60px; /* Levemente maior */
+            height: 60px;
+            border-radius: 50%;
+            display: none; /* Começa escondido, só aparece via media query abaixo */
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(236, 72, 153, 0.4);
+            z-index: 1001;
+            transition: all 0.3s ease;
+        }
+        
+        @media (max-width: 900px) {
+            .mobile-toggle-btn {
+                display: flex; /* Torna visível no mobile */
+            }
+        }
+        /* ========================================= */
+
+        @keyframes pulse {
+            0%, 100% { 
+                transform: scale(1); 
+                box-shadow: 0 0 0 0 rgba(244, 63, 94, 0.7); 
+            }
+            50% { 
+                transform: scale(1.05); 
+                box-shadow: 0 0 20px 5px rgba(244, 63, 94, 0.3); 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-bar" id="progressBar"></div>
+    <div class="back-to-top" id="backToTop" onclick="scrollToTop()">
+        <svg class="icon" viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    </div>
+
+    <div class="mobile-toggle-btn" id="mobileToggleBtn" title="Menu de Navegação">
+        <svg class="icon menu-icon" viewBox="0 0 24 24" style="stroke: white; width: 28px; height: 28px;">
+            <path d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+        <svg class="icon close-icon" viewBox="0 0 24 24" style="stroke: white; width: 28px; height: 28px; display: none;">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+    </div>
+
+    <nav class="floating-nav" id="floatingNav">
+        <a href="#boas-vindas" onclick="event.preventDefault(); document.getElementById('boas-vindas').scrollIntoView({ behavior: 'smooth' });" title="Boas-Vindas">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+        </a>
+        <a href="#toc" onclick="event.preventDefault(); document.getElementById('toc').scrollIntoView({ behavior: 'smooth' });" title="Índice dos Temas">
+            <svg class="icon" viewBox="0 0 24 24"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+        </a>
+        <a href="#summary" onclick="event.preventDefault(); document.getElementById('summary').scrollIntoView({ behavior: 'smooth' });" title="Resumo Comparativo">
+             <svg class="icon" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        </a>
+        <a href="#dicas" onclick="event.preventDefault(); document.getElementById('dicas').scrollIntoView({ behavior: 'smooth' });" title="Dicas de Ouro e Checklist">
+            <svg class="icon" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </a>
+    </nav>
+
+   <section class="cover">
+    <div class="cover-content">
+        <h1 style="font-size: clamp(2rem, 6vw, 3.5rem); margin-bottom: 0.5rem;">
+            <svg class="icon" viewBox="0 0 24 24" style="width: clamp(2.5rem, 8vw, 4rem); height: clamp(2.5rem, 8vw, 4rem);"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+            10 Supertemas
+        </h1>
+        <div style="font-size: clamp(1.8rem, 5vw, 2.8rem); font-weight: 800; margin: 0.5rem 0 1.5rem 0; text-shadow: 0 4px 20px rgba(0,0,0,0.2);">
+            ENEM 2025
+        </div>
+        <p class="subtitle" style="margin-bottom: 2rem; font-size: clamp(1rem, 2.5vw, 1.5rem);">Guia completo e atualizado de preparação para redação</p>
+        
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 0.75rem; margin: 0 auto; max-width: 1100px; padding: 0 1rem;">
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem;">
+                <span class="badge" style="white-space: nowrap;">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+                    Uso estratégico do repertório
+                </span>
+                <span class="badge" style="white-space: nowrap;">
+                    <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                    Sugestões de tese
+                </span>
+                <span class="badge" style="white-space: nowrap;">
+                    <svg class="icon" viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                    Argumentos estruturados
+                </span>
+            </div>
+            
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem;">
+                <span class="badge" style="white-space: nowrap;">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path></svg>
+                    Propostas de intervenção
+                </span>
+                <span class="badge" style="white-space: nowrap;">
+                    <svg class="icon" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    Dicas de ouro
+                </span>
+            </div>
+
+       <span class="badge" style="white-space: nowrap; background: #f093fb; animation: pulse 2s ease-in-out infinite;">
+            <svg class="icon" viewBox="0 0 24 24">
+                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                <line x1="12" y1="9" x2="12" y2="13"></line>
+                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+            </svg>
+            Novidades ENEM 2025
+        </span>
+        </div>
+        
+        
+
+        
+        <a href="#boas-vindas" class="scroll-down" onclick="event.preventDefault(); document.getElementById('boas-vindas').scrollIntoView({ behavior: 'smooth' });">
+            Começar a preparação ↓
+        </a>
+    </div>
+</section>
+
+<div class="container">
+<section class="theme-section" id="boas-vindas">
+            <div class="theme-header">
+                <span class="theme-number">
+                    <svg class="icon" viewBox="0 0 24 24" style="stroke-width: 2.5; -webkit-text-fill-color: var(--primary);">
+                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                    </svg>
+                </span>
+                <h2 class="theme-title">Boas-vindas e como usar este guia</h2>
+            </div>
+
+            <div class="subsection" style="margin-top: 0;">
+                <p style="text-align: justify; font-size: 1.1rem; margin-bottom: 1.5rem;"><strong>Olá, estudante!</strong></p>
+                <p style="text-align: justify; margin-bottom: 1.5rem;">Se você tem este guia em mãos, é porque sabe que a Redação do ENEM pode ser o diferencial decisivo para sua aprovação. Afinal, é a única prova em que você tem controle total para construir uma nota 900+.</p>
+                <p style="text-align: justify; margin-bottom: 2rem;">Mas atenção: este não é apenas mais um material com temas prováveis. Este é um <strong> guia estratégico</strong>! Nosso objetivo não é que você <i>decore</i> os 10 temas, e sim que você domine a estrutura argumentativa que funciona para qualquer tema que cair na prova.</p>
+                <p style="text-align: justify; font-size: 1.1rem; font-weight: 600; color: var(--primary); margin-bottom: 1.5rem;">Para aproveitar ao máximo o material, siga estas instruções de estudo:</p>
+                
+                <div class="argument" style="border-color: var(--primary); background: #f8fafc; padding: 1.5rem;">
+                    <p><strong>1. Não leia apenas, estude ativamente.</strong> Use os "Argumentos Estruturados" como base, mas tente reescrevê-los com suas próprias palavras.</p>
+                </div>
+                <div class="argument" style="border-color: var(--secondary); background: #fdf4ff; padding: 1.5rem;">
+                    <p><strong>2. Foque na Estratégia.</strong> A seção <strong>"Uso estratégico do repertório"</strong> (a caixa rosa) é a parte mais valiosa deste guia. Ela ensina <i>como</i> usar um repertório para <i>provar</i> sua tese, que é exatamente o que exige a Competência II da redação do ENEM.</p>
+                </div>
+                <div class="argument" style="border-color: var(--accent); background: #f0fdfa; padding: 1.5rem;">
+                    <p><strong>3. Entenda a "Proposta espelhada".</strong> Note como cada "Proposta de intervenção" (a caixa verde) foi desenhada para resolver os dois problemas que apresentei nos argumentos (D1 e D2). Isso é um projeto de texto nota 900+.</p>
+                </div>
+                <div class="argument" style="border-color: #f59e0b; background: #fffbeb; padding: 1.5rem;">
+                    <p><strong>4. Domine repertórios que funcionam para vários temas.</strong> No final deste guia, você encontrará a seção "Repertórios versáteis" – sua caixa de ferramentas com referências que podem ser adaptadas para diversos temas da prova. </p>
+                </div>
+
+                <p style="text-align: justify; font-size: 1.1rem; font-weight: 500; margin-top: 2rem;">
+                    A sua aprovação começa com uma redação de excelência. Estamos aqui para guiá-lo.
+                </p>
+                <p style="text-align: right; font-size: 1.1rem; font-weight: 700; margin-top: 1.5rem; color: var(--dark);">
+                    Prof. Jozimar Bernardo
+                </p>
+            </div>
+        </section>
+
+<section class="theme-section" id="novidades-2025" style="background: var(--light); border: 3px solid var(--secondary); box-shadow: 0 15px 50px rgba(236, 72, 153, 0.2);">
+    <div class="theme-header" style="border-bottom-color: var(--secondary);">
+        <span class="theme-number" style="background: var(--gradient-2); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+            <svg class="icon" viewBox="0 0 24 24" style="width: 3.5rem; height: 3.5rem; stroke: var(--secondary); -webkit-text-fill-color: var(--secondary);">
+                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                <line x1="12" y1="9" x2="12" y2="13"></line>
+                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+            </svg>
+        </span>
+        <h2 class="theme-title" style="color: #be185d;">NOVIDADES ENEM 2025: O QUE MUDOU?</h2>
+    </div>
+
+    <div class="subsection" style="margin-top: 2rem;">
+        <div style="background: linear-gradient(135deg, #fff1f8 0%, #fce7f3 100%); border-left: 6px solid #ec4899; padding: 2rem; border-radius: 15px; margin-bottom: 2rem; box-shadow: 0 8px 25px rgba(236, 72, 153, 0.15);">
+            <h3 style="color: #be185d; font-size: 1.6rem; font-weight: 800; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 1rem;">
+                <svg class="icon" viewBox="0 0 24 24" style="width: 32px; height: 32px; stroke: #be185d;">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="8" x2="12" y2="12"></line>
+                    <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                </svg>
+                ATENÇÃO ao "Repertório de bolso"!
+            </h3>
+            
+            <p style="text-align: justify; margin-bottom: 1.5rem; font-size: 1.05rem; line-height: 1.8; color: #831843;">
+                A <strong>maior novidade da Cartilha 2025</strong> é o alerta explícito sobre o <strong>"repertório de bolso"</strong> — aquelas referências decoradas que você usa em qualquer tema, de forma genérica e forçada.
+            </p>
+
+            <div style="background: white; padding: 1.5rem; border-radius: 12px; margin: 1.5rem 0; border: 2px solid #fbcfe8;">
+                <h4 style="color: #be185d; font-weight: 700; margin-bottom: 1rem; font-size: 1.2rem;">📌 O que mudou:</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="padding: 0.75rem 0; color: #831843; display: flex; align-items: flex-start; gap: 0.75rem;">
+                        <svg class="icon" viewBox="0 0 24 24" style="width: 20px; height: 20px; stroke: #be185d; flex-shrink: 0; margin-top: 2px;">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <span>A banca agora <strong>penaliza repertórios prontos</strong> (como "Utopia" de Thomas More, "Bauman" genérico etc.).</span>
+                    </li>
+                    <li style="padding: 0.75rem 0; color: #831843; display: flex; align-items: flex-start; gap: 0.75rem;">
+                        <svg class="icon" viewBox="0 0 24 24" style="width: 20px; height: 20px; stroke: #be185d; flex-shrink: 0; margin-top: 2px;">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <span>Repertórios devem ser <strong>legitimamente relacionados ao tema</strong> e <strong>bem contextualizados.</strong></span>
+                    </li>
+                    <li style="padding: 0.75rem 0; color: #831843; display: flex; align-items: flex-start; gap: 0.75rem;">
+                        <svg class="icon" viewBox="0 0 24 24" style="width: 20px; height: 20px; stroke: #be185d; flex-shrink: 0; margin-top: 2px;">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <span><strong>Não basta citar</strong>: é preciso <strong>explicar</strong> e <strong>articular</strong> com seu argumento.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div style="background: #fce7f3; padding: 1.5rem; border-radius: 12px; margin: 1.5rem 0;">
+                <h4 style="color: #9f1239; font-weight: 700; margin-bottom: 1rem; font-size: 1.2rem;">❌ Exemplos de repertório de bolso (EVITE!):</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="padding: 0.5rem 0; color: #831843;">
+                        <strong>•</strong> Usar "Utopia" de Thomas More de forma genérica apenas como contraste entre "ideal × realidade".
+                    </li>
+                    <li style="padding: 0.5rem 0; color: #831843;">
+                        <strong>•</strong> Citar Bauman ou "instituições zumbi" sem aprofundamento real.
+                    </li>
+                    <li style="padding: 0.5rem 0; color: #831843;">
+                        <strong>•</strong> Inserir Zygmunt Bauman, Hannah Arendt ou qualquer autor como "enfeite teórico".
+                    </li>
+                </ul>
+            </div>
+
+            <div style="background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%); padding: 1.5rem; border-radius: 12px; border-left: 4px solid #059669;">
+                <h4 style="color: #065f46; font-weight: 700; margin-bottom: 1rem; font-size: 1.2rem;">✅ Como evitar o repertório de bolso:</h4>
+                <ol style="padding-left: 1.5rem; color: #065f46;">
+                    <li style="padding: 0.5rem 0;"><strong>Escolha repertórios específicos</strong> que realmente dialoguem com o tema.</li>
+                    <li style="padding: 0.5rem 0;"><strong>Explique o conceito</strong> antes de aplicá-lo.</li>
+                    <li style="padding: 0.5rem 0;"><strong>Mostre domínio</strong> do conteúdo (não apenas o nome do autor).</li>
+                    <li style="padding: 0.5rem 0;"><strong>Articule organicamente</strong> com sua tese.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="subsection">
+        <h3 class="subsection-title" style="color: #059669;">
+            <svg class="icon" viewBox="0 0 24 24" style="stroke: #059669;">
+                <path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/>
+                <path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/>
+            </svg>
+            Exemplos Práticos de Repertório PRODUTIVO
+        </h3>
+        
+        <p style="text-align: justify; margin-bottom: 1.5rem;">A Cartilha 2025 trouxe <strong>3 exemplos inéditos</strong> de como usar repertório de forma PRODUTIVA no tema "Desafios para a valorização da herança africana no Brasil":</p>
+
+        <div class="card-grid">
+            <div class="card" style="border-left-color: #8b5cf6; background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);">
+                <div class="card-title" style="color: #6b21a8;">
+                    <svg class="icon" viewBox="0 0 24 24" style="stroke: #8b5cf6;">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                    </svg>
+                    Maria Beatriz Nascimento
+                </div>
+                <div class="card-content" style="color: #6b21a8;">
+                    Historiadora que estudou quilombos e ancestralidade negra — repertório acadêmico específico e bem contextualizado.
+                </div>
+            </div>
+
+            <div class="card" style="border-left-color: #ec4899; background: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 100%);">
+                <div class="card-title" style="color: #9f1239;">
+                    <svg class="icon" viewBox="0 0 24 24" style="stroke: #ec4899;">
+                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                    </svg>
+                    Maria Firmina dos Reis
+                </div>
+                <div class="card-content" style="color: #9f1239;">
+                    Autora de "Úrsula" (1859), primeiro romance abolicionista brasileiro — repertório literário valorizado.
+                </div>
+            </div>
+
+            <div class="card" style="border-left-color: #f59e0b; background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);">
+                <div class="card-title" style="color: #92400e;">
+                    <svg class="icon" viewBox="0 0 24 24" style="stroke: #f59e0b;">
+                        <path d="M9 18V5l12-2v13"></path>
+                        <circle cx="6" cy="18" r="3"></circle>
+                        <circle cx="18" cy="16" r="3"></circle>
+                    </svg>
+                    Cartola (sambista)
+                </div>
+                <div class="card-content" style="color: #92400e;">
+                    Trajetória de invisibilidade e reconhecimento tardio — repertório de conhecimento de mundo legítimo.
+                </div>
+            </div>
+        </div>
+
+        <div class="pro-tip-box" style="margin-top: 2rem;">
+            <h4 class="tips-title">
+                <svg class="icon" viewBox="0 0 24 24">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+                O que isso significa para você:
+            </h4>
+            <ul class="tips-list">
+                <li>
+                    <svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Aposte em <strong>repertórios diversos</strong> (história, literatura, música, cinema).
+                </li>
+                <li>
+                    <svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Use <strong>conhecimento de mundo</strong>, não apenas "conhecimento institucionalizado".
+                </li>
+                <li>
+                    <svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <strong>Fuja do óbvio</strong>: se todo mundo cita o mesmo autor, você perde autoria.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="subsection">
+        <h3 class="subsection-title" style="color: #3b82f6;">
+            <svg class="icon" viewBox="0 0 24 24" style="stroke: #3b82f6;">
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+            </svg>
+            Outras Mudanças Importantes
+        </h3>
+
+        <div class="argument" style="border-color: #3b82f6; background: #eff6ff;">
+            <div class="argument-header" style="color: #1e40af;">
+                <svg class="icon" viewBox="0 0 24 24" style="stroke: #3b82f6;">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                1. Detalhamento mais rigoroso na Competência V
+            </div>
+            <p>A proposta de intervenção continua exigindo os 5 elementos, mas agora a banca quer ver <strong>maior especificidade.</strong>.</p>
+            
+            <div style="background: white; padding: 1rem; border-radius: 8px; margin-top: 1rem;">
+                <p style="margin-bottom: 0.5rem;"><strong style="color: #dc2626;">❌ Antes:</strong> <span style="color: #7f1d1d;">"O governo deve investir em educação"</span></p>
+                <p><strong style="color: #059669;">✅ Agora:</strong> <span style="color: #065f46;">"O Ministério da Educação deve incluir na BNCC o ensino obrigatório sobre [tema X], por meio de formação continuada de professores, com recursos do FUNDEB, para conscientizar estudantes desde o ensino fundamental".</span></p>
+            </div>
+        </div>
+
+        <div class="argument" style="border-color: #8b5cf6; background: #faf5ff;">
+            <div class="argument-header" style="color: #6b21a8;">
+                <svg class="icon" viewBox="0 0 24 24" style="stroke: #8b5cf6;">
+                    <path d="M12 20h9"></path>
+                    <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                </svg>
+                2. Ênfase em "Autoria"
+            </div>
+            <p>A Competência III (projeto de texto) valoriza ainda mais a <strong>autoria</strong>: sua capacidade de <strong>organizar ideias de forma original</strong>, e não apenas repetir o que está nos textos motivadores.</p>
+        </div>
+
+        <div class="argument" style="border-color: #10b981; background: #f0fdf4;">
+            <div class="argument-header" style="color: #065f46;">
+                <svg class="icon" viewBox="0 0 24 24" style="stroke: #10b981;">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+                3. Exemplos de Redações Nota 1000
+            </div>
+            <p>A Cartilha 2025 traz <strong>10 redações nota 1000</strong> comentadas. <strong>Estude essas redações!</strong> Elas são o seu melhor guia de como estruturar argumentos, usar repertórios e elaborar propostas de intervenção.</p>
+
+<a href="https://download.inep.gov.br/publicacoes/institucionais/avaliacoes_e_exames_da_educacao_basica/a_redacao_no_enem_2025_cartilha_do_participante.pdf" target="_blank" style="display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 1rem; padding: 0.75rem 1.5rem; background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: white; text-decoration: none; border-radius: 8px; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);">
+    <svg class="icon" viewBox="0 0 24 24" style="width: 20px; height: 20px; stroke: white;">
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+        <polyline points="14 2 14 8 20 8"></polyline>
+        <line x1="16" y1="13" x2="8" y2="13"></line>
+        <line x1="16" y1="17" x2="8" y2="17"></line>
+        <polyline points="10 9 9 9 8 9"></polyline>
+    </svg>
+    📥 Baixar Cartilha Completa do ENEM 2025 (PDF)
+</a>
+
+<style>
+a[href*="cartilha"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
+}
+</style>
+        </div>
+    </div>
+
+    <div class="subsection">
+        <h3 class="subsection-title" style="color: #64748b;">
+            <svg class="icon" viewBox="0 0 24 24" style="stroke: #64748b;">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+            </svg>
+            O Que NÃO Mudou (e continua VALENDO)
+        </h3>
+
+        <div class="card-grid">
+            <div class="card" style="background: #f8fafc; border-left-color: #64748b;">
+                <div class="card-content" style="color: #475569;">
+                    <strong>✓</strong> Estrutura do texto: Introdução, 2 desenvolvimentos, Conclusão.
+                </div>
+            </div>
+            <div class="card" style="background: #f8fafc; border-left-color: #64748b;">
+                <div class="card-content" style="color: #475569;">
+                    <strong>✓</strong> 5 Competências (Norma padrão, Tema, Projeto, Coesão, Proposta).
+                </div>
+            </div>
+            <div class="card" style="background: #f8fafc; border-left-color: #64748b;">
+                <div class="card-content" style="color: #475569;">
+                    <strong>✓</strong> 30 linhas no máximo, mínimo de 8 linhas (senão é anulada).
+                </div>
+            </div>
+            <div class="card" style="background: #f8fafc; border-left-color: #64748b;">
+                <div class="card-content" style="color: #475569;">
+                    <strong>✓</strong> Respeito aos Direitos Humanos na proposta de intervenção.
+                </div>
+            </div>
+            <div class="card" style="background: #f8fafc; border-left-color: #64748b;">
+                <div class="card-content" style="color: #475569;">
+                    <strong>✓</strong> Tipo textual: dissertativo-argumentativo (NUNCA narrativo!).
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="subsection">
+        <h3 class="subsection-title" style="color: #f59e0b;">
+            <svg class="icon" viewBox="0 0 24 24" style="stroke: #f59e0b;">
+                <circle cx="12" cy="12" r="10"></circle>
+                <circle cx="12" cy="12" r="6"></circle>
+                <circle cx="12" cy="12" r="2"></circle>
+            </svg>
+            Resumo: Foque nisso em 2025!
+        </h3>
+
+        <table class="summary-table" style="font-size: 1rem;">
+            <thead>
+                <tr>
+                    <th style="background: var(--gradient-1); width: 50%;">✅ O que fazer</th>
+                    <th style="background: var(--gradient-2); width: 50%;">❌ O que evitar</th> </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="color: #065f46; font-weight: 500;">✅ Repertórios específicos e bem explicados.</td>
+                    <td style="color: #831843; font-weight: 500;">❌ "Repertório de bolso" decorado.</td>
+                </tr>
+                <tr>
+                    <td style="color: #065f46; font-weight: 500;">✅ Articular repertório com sua tese.</td>
+                    <td style="color: #831843; font-weight: 500;">❌ Citar autor só para "enfeitar".</td>
+                </tr>
+                <tr>
+                    <td style="color: #065f46; font-weight: 500;">✅ Proposta de intervenção MUITO detalhada.</td>
+                    <td style="color: #831843; font-weight: 500;">❌ Proposta genérica.</td>
+                </tr>
+                <tr>
+                    <td style="color: #065f46; font-weight: 500;">✅ Demonstrar autoria (ideias próprias).</td>
+                    <td style="color: #831843; font-weight: 500;">❌ Copiar textos motivadores.</td>
+                </tr>
+                <tr>
+                    <td style="color: #065f46; font-weight: 500;">✅ Diversificar fontes de repertório.</td>
+                    <td style="color: #831843; font-weight: 500;">❌ Usar sempre os mesmos autores.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</section>
+<div class="toc" id="toc"> <h2>
+                <svg class="icon" viewBox="0 0 24 24"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+                Índice
+            </h2>
+            <div class="toc-grid">
+                <div class="toc-item" onclick="scrollToTheme(1)"><span class="toc-number">01</span><span class="toc-title">Proteção de crianças na era digital</span></div>
+                <div class="toc-item" onclick="scrollToTheme(2)"><span class="toc-number">02</span><span class="toc-title">Emergência climática no Brasil</span></div>
+                <div class="toc-item" onclick="scrollToTheme(3)"><span class="toc-number">03</span><span class="toc-title">Vício em apostas online</span></div>
+                <div class="toc-item" onclick="scrollToTheme(4)"><span class="toc-number">04</span><span class="toc-title">Inteligência artificial</span></div>
+                <div class="toc-item" onclick="scrollToTheme(5)"><span class="toc-number">05</span><span class="toc-title">Envelhecimento populacional</span></div>
+                <div class="toc-item" onclick="scrollToTheme(6)"><span class="toc-number">06</span><span class="toc-title">Saúde mental entre jovens</span></div>
+                <div class="toc-item" onclick="scrollToTheme(7)"><span class="toc-number">07</span><span class="toc-title">Precarização e uberização</span></div>
+                <div class="toc-item" onclick="scrollToTheme(8)"><span class="toc-number">08</span><span class="toc-title">Inclusão de PcD</span></div>
+                <div class="toc-item" onclick="scrollToTheme(9)"><span class="toc-number">09</span><span class="toc-title">Combate à desinformação</span></div>
+                <div class="toc-item" onclick="scrollToTheme(10)"><span class="toc-number">10</span><span class="toc-title">Violência nas escolas</span></div>
+            </div>
+        </div>
+        <section class="theme-section" id="theme1">
+            <div class="theme-header">
+                <span class="theme-number">01</span>
+                <h2 class="theme-title">Proteção de crianças na era digital.</h2>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    Contexto e relevância
+                </h3>
+                <p>Um tema plausível, considerando os <strong>35 anos do Estatuto da Criança e do Adolescente (ECA)</strong> em 2025 e os debates sobre o "ECA Digital", violência online, adultização precoce e o impacto das redes na juventude. O ambiente digital trouxe riscos inéditos: cyberbullying, aliciamento, exposição a conteúdos impróprios, vazamento de dados e impactos na saúde mental.</p>
+                <div>
+                    <span class="context-badge">
+                        <svg class="icon" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                        ECA 35 anos
+                    </span>
+                    <span class="context-badge">
+                        <svg class="icon" viewBox="0 0 24 24"><path d="M18 10h-1.26A8 8 0 1 0 4 12h1.26"/><path d="M16 10l-4 4-4-4"/></svg>
+                        Violência online
+                    </span>
+                    <span class="context-badge">
+                        <svg class="icon" viewBox="0 0 24 24"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
+                        Saúde mental
+                    </span>
+                    <span class="context-badge">
+                        <svg class="icon" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                        Proteção de dados
+                    </span>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Repertório sociocultural
+                </h3>
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-title">ECA (Lei 8.069/1990)</div>
+                        <div class="card-content">Marco legal que completa 35 anos em 2025, estabelecendo proteção integral e prioridade absoluta aos direitos de crianças e adolescentes.</div>
+                    </div>
+                    <div class="card">
+                        <div class="card-title">Shoshana Zuboff (2019)</div>
+                        <div class="card-content">"A era do capitalismo de vigilância" - Análise sobre como empresas de tecnologia coletam e monetizam dados pessoais, inclusive de menores.</div>
+                    </div>
+                    <div class="card">
+                        <div class="card-title">PL 2628/2022</div>
+                        <div class="card-content">Projeto de lei do "ECA Digital" que busca adaptar a proteção infanto-juvenil aos desafios do ambiente digital.</div>
+                    </div>
+                    <div class="card">
+                        <div class="card-title">UNICEF (2021)</div>
+                        <div class="card-content">Relatório "Situação mundial da infância 2021: na minha mente" - Dados sobre impactos da internet na saúde mental globalmente.</div>
+                    </div>
+                    <div class="card">
+                        <div class="card-title">LGPD (Lei 13.709/2018)</div>
+                        <div class="card-content">Art. 14: Proteção especial aos dados pessoais de crianças e adolescentes, exigindo consentimento parental específico.</div>
+                    </div>
+                </div>
+                <div class="strategy-card">
+                    <h4 class="card-title">
+                        <svg class="icon" viewBox="0 0 24 24"><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+                        Uso estratégico do repertório
+                    </h4>
+                    <div class="card-content">
+                        <p>Use <strong>Zuboff</strong> para elevar seu argumento sobre "redes sociais". Não se trata apenas de "vício em tela", mas de um modelo econômico. O <strong>"Capitalismo de vigilância"</strong> transforma a atenção e as emoções da criança em <strong>matéria-prima (commodity)</strong> para gerar lucro. Isso prova que o problema é sistêmico e exige regulação (seu D2).</p>
+                        <p style="margin-top: 1rem;">Combine o <strong>ECA (1990)</strong> com a <strong>LGPD (2018)</strong> para mostrar uma "incoerência legal": a lei de proteção máxima (ECA) é analógica e não foi atualizada, enquanto a lei de dados (LGPD) é mais moderna, mas insuficiente para os riscos psicosssosiais.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    Contextualizações para introdução
+                </h3>
+                <div class="card-grid">
+                    <div class="card"><div class="card-title">📺 Documentário: "O dilema das redes" (2020)</div><div class="card-content">Ilustrar como algoritmos são projetados para viciar usuários, incluindo crianças, em plataformas digitais.</div></div>
+                    <div class="card"><div class="card-title">💡 Conceito: Sharenting</div><div class="card-content">Discutir a exposição precoce de crianças nas redes por seus próprios pais, violando privacidade e criando rastro digital permanente.</div></div>
+                    <div class="card"><div class="card-title">📅 Fato: 35 anos do ECA (2025)</div><div class="card-content">Contrastar avanços na proteção offline com os novos desafios do mundo digital que o estatuto não previa.</div></div>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                    Tese proposta
+                </h3>
+                <div class="thesis-box">
+                    A proteção de crianças e adolescentes na era digital exige atualização urgente do marco legal brasileiro, com criação de mecanismos específicos de responsabilização de plataformas digitais, educação para uso consciente da internet e fortalecimento de redes de apoio que previnam e combatam violências virtuais, garantindo que os direitos previstos no ECA se estendam ao ambiente online.
+                </div>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                    Argumentos estruturados
+                </h3>
+                <div class="argument">
+                    <div class="argument-header">Argumento 1</div>
+                    <span class="argument-category">Saúde mental e desenvolvimento</span>
+                    <p>Em primeira análise, é crucial destacar como a exposição precoce e desregulada às redes sociais compromete o desenvolvimento saudável de crianças e adolescentes. Nesse sentido, segundo o relatório do UNICEF (2021), o uso excessivo de internet está associado a ansiedade, depressão e baixa autoestima em jovens. Além disso, algoritmos viciantes, como analisado por Shoshana Zuboff em "A era do capitalismo de vigilância" (2019), exploram vulnerabilidades psicológicas infantis para maximizar engajamento. Dessa forma, sem regulamentação adequada, uma geração inteira cresce exposta a padrões irreais e cyberbullying, o que molda negativamente sua autoimagem, evidenciando a urgência de uma supervisão digital efetiva.</p>
+                </div>
+                <div class="argument">
+                    <div class="argument-header">Argumento 2</div>
+                    <span class="argument-category">Direitos e proteção legal</span>
+                    <p>Ademais, constata-se que o ECA (1990), apesar de seus 35 anos de vigência, não contempla especificamente as violências e explorações do ambiente digital. De fato, casos de aliciamento online e vazamento de dados infantis evidenciiam lacunas legais críticas. Embora o PL 2628/2022, o "ECA Digital", busque preencher essa lacuna, sua tramitação lenta expõe milhões de crianças a riscos. Paralelamente, a LGPD (2018) oferece proteção parcial aos dados, mas falta fiscalização efetiva e mecanismos de denúncia acessíveis que garantam a aplicação real dos direitos previstos constitucionalmente, reforçando a tese de que o marco legal precisa ser urgentemente atualizado.</p>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path></svg>
+                    Proposta de intervenção
+                </h3>
+                <div class="intervention-box">
+                    <div class="intervention-item"><div class="intervention-label">Agente:</div><p>Congresso Nacional em parceria com Ministério dos Direitos Humanos e Cidadania e Ministério da Justiça.</p></div>
+                    <div class="intervention-item"><div class="intervention-label">Ação:</div><p>Aprovar e regulamentar o "ECA Digital" (resolvendo o D2) estabelecendo responsabilidades das plataformas e criar programa nacional de educação digital (resolvendo o D1).</p></div>
+                    <div class="intervention-item"><div class="intervention-label">Meio/Modo:</div><p>Através de legislação que obrigue verificação etária rigorosa, moderação de conteúdo, transparência algorítmica e limites de tempo de uso para menores, além de inclusão de letramento digital no currículo escolar.</p></div>
+                    <div class="intervention-item"><div class="intervention-label">Finalidade:</div><p>Proteger crianças e adolescentes de violências digitais e capacitar famílias e educadores para mediação segura do uso de tecnologias.</p></div>
+                    <div class="intervention-item"><div class="intervention-label">Detalhamento:</div><p>As plataformas devem implementar sistemas de verificação de idade por inteligência artificial e ser obrigadas a reportar crimes contra menores às autoridades em até 24 horas, sob pena de multas proporcionais ao faturamento, similar ao modelo da União Europeia (Digital Services Act).</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="theme-section" id="theme2">
+            <div class="theme-header">
+                <span class="theme-number">02</span>
+                <h2 class="theme-title">Emergência climática no Brasil</h2>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    Contexto e relevância
+                </h3>
+                <p>Extremamente relevante devido aos recentes eventos climáticos extremos no país e à realização da <strong>COP30 em Belém em novembro de 2025</strong>. O Brasil vivenciou em 2023-2024 secas históricas na Amazônia, enchentes devastadoras no Sul, ondas de calor recordes e incêndios florestais sem precedentes, evidenciando que a emergência climática não é mais ameaça futura, mas realidade presente com consequências sociais dramáticas.</p>
+                <div>
+                    <span class="context-badge">COP30 Belém 2025</span>
+                    <span class="context-badge">Eventos extremos</span>
+                    <span class="context-badge">Justiça climática</span>
+                    <span class="context-badge">Amazônia</span>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Repertório sociocultural
+                </h3>
+                <div class="card-grid">
+                    <div class="card"><div class="card-title">COP30 (2025)</div><div class="card-content">Conferência da ONU sobre mudanças climáticas em Belém coloca o Brasil no centro das discussões climáticas globais.</div></div>
+                    <div class="card"><div class="card-title">Ailton Krenak (2019)</div><div class="card-content">"Ideias para adiar o fim do mundo" - Pensador indígena brasileiro que propõe reconexão com a natureza.</div></div>
+                    <div class="card"><div class="card-title">Acordo de Paris (2015)</div><div class="card-content">Tratado internacional do qual o Brasil é signatário, comprometendo-se a reduzir emissões.</div></div>
+                    <div class="card"><div class="card-title">IPCC - Relatório AR6 (2021-2023)</div><div class="card-content">Painel Intergovernamental confirma inequivocamente a ação humana no aquecimento global.</div></div>
+                    <div class="card"><div class="card-title">Racismo ambiental</div><div class="card-content">Conceito que mostra como populações marginalizadas (periferias, povos tradicionais) sofrem desproporcionalmente impactos climáticos.</div></div>
+                </div>
+                <div class="strategy-card">
+                    <h4 class="card-title">
+                        <svg class="icon" viewBox="0 0 24 24"><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+                        Uso estratégico do repertório
+                    </h4>
+                    <div class="card-content">
+                        <p>Use <strong>Ailton Krenak</strong> para dar uma perspectiva filosófica e crítica. Ele argumenta que o "fim do mundo" já chegou para muitos povos (como os indígenas) e que o modelo de desenvolvimento "civilizado" é o que destrói o planeta. Isso se conecta perfeitamente ao <strong>racismo ambiental</strong>, provando que a crise climática não é democrática: ela atinge primeiro quem menos contribuiu para ela (seu D1).</p>
+                        <p style="margin-top: 1rem;">Use a <strong>COP30 (2025)</strong> e o <strong>Acordo de Paris (2015)</strong> para o seu D2 (Político/Econômico), mostrando a <strong>contradição brasileira</strong>: o país quer ser líder climático (sediará a COP) mas, ao mesmo tempo, enfrenta dificuldades em cumprir suas metas (Acordo de Paris) devido a pressões do agronegócio e desmatamento.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    Contextualizações para introdução
+                </h3>
+                <div class="card-grid">
+                    <div class="card"><div class="card-title">🎬 Filme: "Não olhe para cima" (2021)</div><div class="card-content">Metáfora sobre negacionismo climático e inação política diante de catástrofe iminente.</div></div>
+                    <div class="card"><div class="card-title">📰 Fato: Enchentes no RS (2024)</div><div class="card-content">Demonstrar que emergência climática já é realidade brasileira com custos humanos imensuráveis.</div></div>
+                    <div class="card"><div class="card-title">🌍 Evento: COP30 em Belém (2025)</div><div class="card-content">Contextualizar responsabilidade brasileira como guardião da maior floresta tropical do planeta.</div></div>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                    Tese proposta
+                </h3>
+                <div class="thesis-box">
+                    A emergência climática no Brasil transcendeu o debate ambiental para se tornar crise humanitária que exige resposta integrada combinando mitigação de emissões, adaptação de infraestruturas, proteção de populações vulneráveis e transição justa para economia sustentável, reconhecendo que os impactos climáticos aprofundam desigualdades históricas e ameaçam direitos fundamentais de milhões de brasileiros.
+                </div>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                    Argumentos estruturados
+                </h3>
+                <div class="argument">
+                    <div class="argument-header">Argumento 1</div>
+                    <span class="argument-category">Ambiental e social</span>
+                    <p>Em primeiro lugar, nota-se que os eventos climáticos extremos atingem desproporcionalmente as populações vulneráveis, configurando o que se denomina "racismo ambiental". As enchentes no RS (2024), por exemplo, afetaram primordialmente periferias. Paralelamente, secas na Amazônia impactam comunidades ribeirinhas. Essa dinâmica confirma o alerta de Ailton Krenak em "Ideias para adiar o fim do mundo" (2019): o modelo de desenvolvimento que ignora a natureza cobra seu preço daqueles que menos contribuíram para a crise, perpetuando um ciclo de injustiça socioambiental que precisa ser rompido.</p>
+                </div>
+                <div class="argument">
+                    <div class="argument-header">Argumento 2</div>
+                    <span class="argument-category">Político e econômico</span>
+                    <p>Em segundo lugar, a realização da COP30 (2025) em Belém coloca o Brasil em posição estratégica, mas também expõe contradições entre compromissos internacionais e práticas internas. Embora seja signatário do Acordo de Paris (2015), o país enfrenta desafios para conciliar proteção ambiental com pressões econômicas. O IPCC (Relatório AR6) é inequívoco: a janela para ação está se fechando. Portanto, sem investimentos massivos em energias renováveis, contenção do desmatamento e adaptação de infraestrutura, o Brasil caminha para um colapso socioambiental com prejuízos econômicos que superarão os custos da necessária transição verde.</p>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path></svg>
+                    Proposta de intervenção
+                </h3>
+                <div class="intervention-box">
+                    <div class="intervention-item"><div class="intervention-label">Agente:</div><p>Governo Federal através do Ministério do Meio Ambiente em parceria com estados e municípios.</p></div>
+                    <div class="intervention-item"><div class="intervention-label">Ação:</div><p>Implementar plano nacional de adaptação climática com foco em proteção de populações vulneráveis (resolvendo o D1) e em mitigação de emissões (resolvendo o D2).</p></div>
+                    <div class="intervention-item"><div class="intervention-label">Meio/Modo:</div><p>Por meio de investimentos em sistemas de alerta precoce, relocação assistida de comunidades em áreas de risco (justiça climática), recuperação de áreas degradadas e incentivos a energias renováveis.</p></div>
+                    <div class="intervention-item"><div class="intervention-label">Finalidade:</div><p>Reduzir vulnerabilidade socioambiental, proteger vidas e garantir cumprimento dos compromissos climáticos brasileiros (como o Acordo de Paris).</p></div>
+                    <div class="intervention-item"><div class="intervention-label">Detalhamento:</div><p>O sistema de alerta precoce deve utilizar inteligência artificial e monitoramento satelital para prever eventos extremos com antecedência mínima de 72 horas, integrando Defesa Civil, governos locais e comunidades, com protocolos claros de evacuação, similar ao modelo japonês de prevenção de desastres.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="theme-section" id="theme3">
+            <div class="theme-header">
+                <span class="theme-number">03</span>
+                <h2 class="theme-title">Vício em apostas online</h2>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    Contexto e relevância
+                </h3>
+                <p>Um fenômeno social novo e crescente, com graves implicações para a saúde mental e a economia das famílias, que está sendo amplamente debatido. O Brasil registrou crescimento exponencial nas plataformas de apostas digitais ("bets") entre 2023 e 2025, gerando preocupações sobre endividamento familiar, ludopatia e impactos na juventude.</p>
+                <div>
+                    <span class="context-badge">Ludopatia</span>
+                    <span class="context-badge">Endividamento</span>
+                    <span class="context-badge">Saúde mental</span>
+                    <span class="context-badge">Regulamentação</span>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Repertório sociocultural
+                </h3>
+                <div class="card-grid">
+                    <div class="card"><div class="card-title">Zygmunt Bauman (2000)</div><div class="card-content">"Modernidade líquida" - Análise da sociedade de consumo, onde tudo é volátil e focado no desejo imediato, aplicável à busca por ganhos rápidos.</div></div>
+                    <div class="card"><div class="card-title">Lei nº 14.790/2023</div><div class="card-content">Regulamentação das apostas esportivas no Brasil, estabelecendo regras de funcionamento e impostos.</div></div>
+                    <div class="card"><div class="card-title">OMS - Transtorno do jogo</div><div class="card-content">Reconhecimento do vício em jogos como transtorno mental (Ludopatia, F63.0 no CID-11).</div></div>
+                    <div class="card"><div class="card-title">Banco Central (Dados de 2024)</div><div class="card-content">Dados indicam que famílias de baixa renda comprometem até 20% da renda mensal com apostas.</div></div>
+                    <div class="card"><div class="card-title">Phillip Hodson</div><div class="card-content">Psicoterapeuta que cunhou o termo "Gratificação instantânea", popularizado por Bauman em "Vida a crédito".</div></div>
+                </div>
+                <div class="strategy-card">
+                    <h4 class="card-title">
+                        <svg class="icon" viewBox="0 0 24 24"><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+                        Uso estratégico do repertório
+                    </h4>
+                    <div class="card-content">
+                        <p>Seu D1 deve focar na <strong>saúde (OMS)</strong>. Use a OMS para legitimar o vício como <strong>"Transtorno do jogo" (Ludopatia)</strong>. Isso retira o problema da esfera da "falta de vergonha" ou "fraqueza moral" e o coloca onde deve estar: um problema de saúde pública que exige tratamento (SUS).</p>
+                        <p style="margin-top: 1rem;">Seu D2 deve focar no <strong>socioeconômico (Bauman)</strong>. Use a <strong>"Modernidade líquida"</strong> ou a <strong>"Gratificação instantânea"</strong> para argumentar que as apostas exploram um sintoma social: a busca desesperada por soluções imediatas ("ficar rico rápido") numa sociedade instável e desigual. Os dados do Banco Central (20% da renda) provam essa tese.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    Contextualizações para introdução
+                </h3>
+                <div class="card-grid">
+                    <div class="card"><div class="card-title">🎬 Filme: "Fogo no jogo" (2003)</div><div class="card-content">Baseado em fatos, ilustra como o vício em apostas pode destruir relacionamentos e levar a consequências trágicas.</div></div>
+                    <div class="card"><div class="card-title">🧠 Conceito: Reforço intermitente</div><div class="card-content">Explicar o mecanismo neurológico (liberação de dopamina) que torna as apostas tão viciantes.</div></div>
+                    <div class="card"><div class="card-title">📱 Fato: Influenciadores e bets</div><div class="card-content">Demonstrar como a publicidade massiva, muitas vezes sem alertas, normaliza o comportamento de risco.</div></div>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                    Tese proposta
+                </h3>
+                <div class="thesis-box">
+                    O crescimento desregulado das apostas online no Brasil configura um problema de saúde pública que exige ação coordenada entre Estado, plataformas digitais e sociedade civil, considerando tanto a necessidade de regulamentação efetiva quanto de programas de prevenção e tratamento ao vício em jogos de azar.
+                </div>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                    Argumentos estruturados
+                </h3>
+                <div class="argument">
+                    <div class="argument-header">Argumento 1</div>
+                    <span class="argument-category">Saúde pública</span>
+                    <p>Primeiramente, o vício em apostas online representa uma grave ameaça à saúde mental da população, especialmente jovens. De acordo com a OMS, o transtorno do jogo (ludopatia) afeta milhões globalmente, provocando ansiedade, depressão e até ideação suicida. No Brasil, a fácil acessibilidade via smartphones, aliada à publicidade agressiva, amplifica o problema. Isso cria uma geração exposta precocemente a comportamentos de risco que, sem o devido controle, podem evoluir para uma dependência patológica de difícil reversão.</p>
+                </div>
+                <div class="argument">
+                    <div class="argument-header">Argumento 2</div>
+                    <span class="argument-category">Socioeconômico</span>
+                    <p>Outrossim, o impacto financeiro das apostas online atinge desproporcionalmente as camadas mais vulneráveis. Dados do Banco Central (2024) revelam que famílias de baixa renda, atraídas pela promessa de enriquecimento rápido — um reflexo da "Modernidade líquida" analisada por Bauman (2000), onde o desejo por soluções imediatas se sobrepõe ao planejamento —, comprometem parcelas significativas do orçamento. Tal fenômeno agrava ciclos de endividamento e pobreza, transformando a esperança de ascensão social em uma armadilha financeira.</p>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path></svg>
+                    Proposta de intervenção
+                </h3>
+                <div class="intervention-box">
+                    <div class="intervention-item"><div class="intervention-label">Agente:</div><p>Ministério da Saúde em parceria com o Ministério da Fazenda (órgão regulador da Lei 14.790).</p></div>
+                    <div class="intervention-item"><div class="intervention-label">Ação:</div><p>Implementar programa nacional de prevenção à ludopatia (resolvendo o D1) e regulamentar a publicidade de apostas (resolvendo o D2).</p></div>
+                    <div class="intervention-item"><div class="intervention-label">Meio/Modo:</div><p>Através da criação de centros especializados no SUS, campanhas educativas sobre os riscos do vício e regras rígidas de publicidade (proibindo o uso de influenciadores para prometer ganhos fáceis).</p></div>
+                    <div class="intervention-item"><div class="intervention-label">Finalidade:</div><p>Reduzir os índices de ludopatia e proteger populações vulneráveis (baixa renda) dos impactos do vício em jogos.</p></div>
+                    <div class="intervention-item"><div class="intervention-label">Detalhamento:</div><p>Os centros do SUS devem ser financiados com parte da arrecadação de impostos sobre as próprias apostas (conforme previsto na Lei 14.790), garantindo recursos contínuos para o tratamento do transtorno reconhecido pela OMS.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="theme-section" id="theme4">
+            <div class="theme-header">
+                <span class="theme-number">04</span>
+                <h2 class="theme-title">Inteligência artificial</h2>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    Contexto e relevância
+                </h3>
+                <p>A rápida popularização da IA levanta questões sobre substituição de empregos, ética, desinformação e a necessidade de regulamentação. Em 2025, ferramentas de IA generativa como ChatGPT, Gemini e outras transformaram radicalmente diversos setores, gerando debates sobre o futuro do trabalho e direitos autorais.</p>
+                <div>
+                    <span class="context-badge">Automação</span>
+                    <span class="context-badge">Mercado de trabalho</span>
+                    <span class="context-badge">Ética</span>
+                    <span class="context-badge">Regulamentação</span>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Repertório sociocultural
+                </h3>
+                <div class="card-grid">
+                    <div class="card"><div class="card-title">Yuval Noah Harari (2018)</div><div class="card-content">"21 lições para o século 21" - Discussão sobre automação e a criação de uma "classe de inúteis" (obsolescência profissional).</div></div>
+                    <div class="card"><div class="card-title">PL 2338/2023</div><div class="card-content">Marco legal da inteligência artificial no Brasil, estabelecendo princípios éticos e de responsabilidade.</div></div>
+                    <div class="card"><div class="card-title">Estudo McKinsey (2024)</div><div class="card-content">Projeção de que até 30% dos empregos atuais podem ser automatizados até 2030.</div></div>
+                    <div class="card"><div class="card-title">Viés algorítmico</div><div class="card-content">Sistemas de IA podem reproduzir e amplificar preconceitos (racismo, sexismo) presentes nos dados de treinamento.</div></div>
+                    <div class="card"><div class="card-title">Declaração de Bletchley (2023)</div><div class="card-content">Acordo internacional (incluindo Brasil) sobre a necessidade de cooperação global para gerenciar os riscos da IA.</div></div>
+                </div>
+                <div class="strategy-card">
+                    <h4 class="card-title">
+                        <svg class="icon" viewBox="0 0 24 24"><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+                        Uso estratégico do repertório
+                    </h4>
+                    <div class="card-content">
+                        <p>O D1 (trabalho) fica muito forte com <strong>Harari</strong>. Use o conceito de <strong>"classe de inúteis"</strong> (do livro "Homo Deus", mas popularizado em "21 lições") para pintar o quadro social: o problema não é a automação, é o que fazer com milhões de pessoas "desnecessárias" para o mercado. Isso prova a urgência da requalificação.</p>
+                        <p style="margin-top: 1rem;">O D2 (ética) deve usar o <strong>"Viés algorítmico"</strong>. Argumente que a IA não é neutra; ela é treinada com dados humanos (cheios de preconceitos). Se a IA decide quem é contratado ou quem recebe crédito, ela pode <strong>automatizar a discriminação</strong>. Isso fere o Art. 5º da CF/88 (igualdade) e exige o <strong>PL 2338/2023</strong>.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    Contextualizações para introdução
+                </h3>
+                <div class="card-grid">
+                    <div class="card"><div class="card-title">🎬 Filme: "Ex Machina" (2014)</div><div class="card-content">Questionar os limites entre inteligência humana e artificial, abordando dilemas éticos sobre controle e consciência.</div></div>
+                    <div class="card"><div class="card-title">🏭 Revolução industrial (Séc. XVIII-XIX)</div><div class="card-content">Traçar paralelo entre a automação mecânica do passado (que substituiu a força) e a atual revolução cognitiva (que substitui o intelecto).</div></div>
+                    <div class="card"><div class="card-title">📖 Livro: "Eu, robô" (Isaac Asimov, 1950)</div><div class="card-content">Usar as três leis da robótica para introduzir a necessidade de limites éticos para a IA.</div></div>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                    Tese proposta
+                </h3>
+                <div class="thesis-box">
+                    A integração da inteligência artificial na sociedade brasileira demanda uma abordagem equilibrada que concilie inovação tecnológica com proteção trabalhista e regulamentação ética, garantindo que os benefícios da automação sejam democraticamente distribuídos e não aprofundem desigualdades estruturais.
+                </div>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                    Argumentos estruturados
+                </h3>
+                <div class="argument">
+                    <div class="argument-header">Argumento 1</div>
+                    <span class="argument-category">Mercado de trabalho</span>
+                    <p>Sob um primeiro viés, a automação promovida pela IA ameaça milhões de postos de trabalho no Brasil. Estudos da McKinsey (2024) indicam que profissões em atendimento e análise de dados estão em risco iminente. Conforme alerta Yuval Harari (2018) sobre a "obsolescência profissional", sem políticas públicas de requalificação, o país pode enfrentar desemprego estrutural massivo. Isso agravaria desigualdades em uma nação que já luta contra altos índices de informalidade, aprofundando a vulnerabilidade nacional.</p>
+                </div>
+                <div class="argument">
+                    <div class="argument-header">Argumento 2</div>
+                    <span class="argument-category">Ética e direitos</span>
+                    <p>Sob um segundo viés, os sistemas de IA podem reproduzir "vieses algorítmicos", perpetuando discriminações históricas. Algoritmos usados em processos seletivos ou concessão de crédito já demonstraram preconceitos contra minorias. Desse modo, a ausência de uma regulamentação específica no Brasil, como o PL 2338/2023 ainda em debate, permite que essas tecnologias operem sem transparência. Tal cenário acaba por violar princípios constitucionais de igualdade (Art. 5º), exigindo que a ética guie a inovação.</p>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path></svg>
+                    Proposta de intervenção
+                </h3>
+                <div class="intervention-box">
+                    <div class="intervention-item"><div class="intervention-label">Agente:</div><p>Ministério da Ciência, Tecnologia e Inovação em conjunto com o Ministério do Trabalho.</p></div>
+                    <div class="intervention-item"><div class="intervention-label">Ação:</div><p>Criar programa nacional de capacitação digital para a "economia da IA" (resolvendo D1) e acelerar a aprovação do marco legal da IA (resolvendo D2).</p></div>
+                    <div class="intervention-item"><div class="intervention-label">Meio/Modo:</div><p>Por meio de parcerias com instituições de ensino (Sistemas S), oferta de cursos gratuitos em áreas emergentes (como supervisão de IA) e aprovação do PL 2338/2023 (exigindo transparência e auditoria de algoritmos).</p></div>
+                    <div class="intervention-item"><div class="intervention-label">Finalidade:</div><p>Preparar a força de trabalho brasileira para a automação (evitando a "classe de inúteis" de Harari) e garantir o uso ético da IA (combatendo o viés algorítmico).</p></div>
+                    <div class="intervention-item"><div class="intervention-label">Detalhamento:</div><p>Os cursos devem priorizar trabalhadores de setores em maior risco de automação (segundo dados da McKinsey), oferecendo certificações reconhecidas e bolsas de estudo para garantir acessibilidade e manutenção da renda durante a transição.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="theme-section" id="theme5">
+            <div class="theme-header">
+                <span class="theme-number">05</span>
+                <h2 class="theme-title">Envelhecimento populacional</h2>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    Contexto e relevância
+                </h3>
+                <p>Com a pirâmide etária brasileira mudando, o debate sobre previdência, saúde pública para idosos e o combate ao etarismo (preconceito de idade) ganha força. Projeções do IBGE indicam que em 2050, cerca de 30% da população terá mais de 60 anos.</p>
+                <div>
+                    <span class="context-badge">Pirâmide etária</span>
+                    <span class="context-badge">Etarismo</span>
+                    <span class="context-badge">Previdência</span>
+                    <span class="context-badge">Estatuto do idoso</span>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Repertório sociocultural
+                </h3>
+                <div class="card-grid">
+                    <div class="card"><div class="card-title">Estatuto do idoso (Lei 10.741/2003)</div><div class="card-content">Marco legal que estabelece direitos e proteções específicas para pessoas com 60 anos ou mais.</div></div>
+                    <div class="card"><div class="card-title">Simone de Beauvoir (1970)</div><div class="card-content">"A velhice" - Análise filosófica sobre como a sociedade marginaliza e invisibiliza os idosos, tratando-os como "outros".</div></div>
+                    <div class="card"><div class="card-title">IBGE - Projeções</div><div class="card-content">Dados sobre inversão da pirâmide etária e impactos no sistema previdenciário e de saúde (bônus demográfico se esgotando).</div></div>
+                    <div class="card"><div class="card-title">Conceito de etarismo (ageísmo)</div><div class="card-content">Preconceito e discriminação baseados na idade, presente no mercado de trabalho e nas relações sociais.</div></div>
+                    <div class="card"><div class="card-title">OMS - Década do envelhecimento saudável</div><div class="card-content">Iniciativa global (2021-2030) para melhorar a vida de pessoas idosas, suas famílias e comunidades.</div></div>
+                </div>
+                <div class="strategy-card">
+                    <h4 class="card-title">
+                        <svg class="icon" viewBox="0 0 24 24"><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+                        Uso estratégico do repertório
+                    </h4>
+                    <div class="card-content">
+                        <p>O D1 (saúde/previdência) deve usar os dados do <strong>IBGE</strong>. O argumento é matemático: a base (jovens) está diminuindo e o topo (idosos) está aumentando. Isso gera uma crise dupla: 1) o <strong>SUS</strong> não está preparado (faltam geriatras) e 2) a <strong>previdência</strong> fica sobrecarregada.</p>
+                        <p style="margin-top: 1rem;">O D2 (social) deve usar <strong>Simone de Beauvoir</strong>. "A velhice" (1970) permite argumentar que o <strong>etarismo</strong> não é só "grosseria", é uma *construção social*. A sociedade capitalista, focada em produtividade, vê o idoso como "improdutivo" e o descarta. Isso prova que o problema é estrutural e viola o <strong>Estatuto do idoso (2003)</strong>.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    Contextualizações para introdução
+                </h3>
+                <div class="card-grid">
+                    <div class="card"><div class="card-title">🎬 Filme: "Aquarius" (2016)</div><div class="card-content">Retratar a resistência e dignidade de uma idosa (Sônia Braga) diante da especulação imobiliária e do desrespeito etarista.</div></div>
+                    <div class="card"><div class="card-title">📊 Bônus demográfico</div><div class="card-content">Explicar a transição de um país jovem para uma sociedade envelhecida e os desafios de custeio da previdência.</div></div>
+                    <div class="card"><div class="card-title">🎬 Filme: "Up - altas aventuras" (2009)</div><div class="card-content">Usar a figura de Carl Fredricksen para discutir isolamento social e a redescoberta de propósito na velhice.</div></div>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                    Tese proposta
+                </h3>
+                <div class="thesis-box">
+                    O envelhecimento acelerado da população brasileira exige reformulação urgente das políticas públicas de saúde, previdência e inclusão social, combatendo o etarismo estrutural e garantindo que a longevidade seja acompanhada de qualidade de vida, dignidade e participação ativa dos idosos na sociedade.
+                </div>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                    Argumentos estruturados
+                </h3>
+                <div class="argument">
+                    <div class="argument-header">Argumento 1</div>
+                    <span class="argument-category">Saúde pública</span>
+                    <p>De início, o Sistema Único de Saúde (SUS) enfrenta crescente pressão para atender demandas específicas da população idosa, como doenças crônicas. A infraestrutura atual, já sobrecarregada, não está preparada para a rápida transição demográfica projetada pelo IBGE. Essa defasagem é crítica, pois, sem investimentos em geriatria e cuidados paliativos, o Brasil caminha para uma crise sanitária que comprometerá a dignidade de milhões de idosos, ferindo o direito à saúde garantido pela Constituição.</p>
+                </div>
+                <div class="argument">
+                    <div class="argument-header">Argumento 2</div>
+                    <span class="argument-category">Social</span>
+                    <p>Ademais, o "etarismo" no mercado de trabalho condena idosos à invisibilidade, como analisou Simone de Beauvoir em "A velhice" (1970). Mesmo com competências preservadas, profissionais acima de 50 anos enfrentam barreiras sistemáticas para recolocação, pois a sociedade perpetua estereótipos que associam velhice à improdutividade. Consequentemente, esse preconceito, aliado ao isolamento social, agrava quadros de depressão e abandono, configurando violação direta aos princípios de igualdade e respeito previstos no Estatuto do idoso (2003).</p>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path></svg>
+                    Proposta de intervenção
+                </h3>
+                <div class="intervention-box">
+                    <div class="intervention-item"><div class="intervention-label">Agente:</div><p>Ministério da Saúde em parceria com Ministério dos Direitos Humanos e Cidadania.</p></div>
+                    <div class="intervention-item"><div class="intervention-label">Ação:</div><p>Implementar política nacional integrada de atenção ao idoso, focando na ampliação do atendimento geriátrico (resolvendo D1) e no combate ao etarismo (resolvendo D2).</p></div>
+                    <div class="intervention-item"><div class="intervention-label">Meio/Modo:</div><p>Através da ampliação de centros de referência em geriatria no SUS, campanhas de conscientização sobre preconceito etário (etarismo) e incentivos fiscais para empresas que contratem profissionais 50+.</p></div>
+                    <div class="intervention-item"><div class="intervention-label">Finalidade:</div><p>Garantir envelhecimento digno e ativo, promovendo inclusão social e acesso pleno a direitos, alinhando-se à Década do Envelhecimento Saudável da OMS.</p></div>
+                    <div class="intervention-item"><div class="intervention-label">Detalhamento:</div><p>As campanhas devem utilizar mídias sociais e tradicionais para desconstruir os estereótipos de "improdutividade" (citados por Beauvoir), incluindo testemunhos de idosos em posições de liderança e contribuição social ativa.</p></div>
+                </div>
+            </div>
+        </section>
+        <section class="theme-section" id="theme6">
+            <div class="theme-header">
+                <span class="theme-number">06</span>
+                <h2 class="theme-title">Saúde mental entre jovens</h2>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    Contexto e relevância
+                </h3>
+                <p>Um tema que continua muito pertinente, focado nos efeitos da pressão social, redes sociais e ansiedade na população mais jovem. Dados da OMS indicam aumento de 25% em casos de ansiedade e depressão entre jovens no pós-pandemia.</p>
+                <div>
+                    <span class="context-badge">Ansiedade</span>
+                    <span class="context-badge">Depressão</span>
+                    <span class="context-badge">Redes sociais</span>
+                    <span class="context-badge">Setembro amarelo</span>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Repertório sociocultural
+                </h3>
+                <div class="card-grid">
+                    <div class="card"><div class="card-title">Byung-Chul Han (2010)</div><div class="card-content">"Sociedade do cansaço" - Análise da sociedade do desempenho e autoexploração, que leva ao esgotamento (burnout) e depressão.</div></div>
+                    <div class="card"><div class="card-title">Setembro amarelo</div><div class="card-content">Campanha brasileira de prevenção ao suicídio, que visa quebrar o tabu sobre o tema.</div></div>
+                    <div class="card"><div class="card-title">OMS - Relatório (2022)</div><div class="card-content">Dados sobre crescimento de transtornos mentais em adolescentes e jovens adultos pós-pandemia.</div></div>
+                    <div class="card"><div class="card-title">Lei nº 13.819/2019</div><div class="card-content">Institui a política nacional de prevenção da automutilação e do suicídio.</div></div>
+                    <div class="card"><div class="card-title">CVV (Centro de valorização da vida)</div><div class="card-content">Iniciativa (Disque 188) de apoio emocional e prevenção ao suicídio.</div></div>
+                </div>
+                <div class="strategy-card">
+                    <h4 class="card-title">
+                        <svg class="icon" viewBox="0 0 24 24"><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+                        Uso estratégico do repertório
+                    </h4>
+                    <div class="card-content">
+                        <p>O D1 (saúde pública) deve usar os dados da <strong>OMS (2022)</strong>. O argumento é que a demanda por saúde mental pós-pandemia aumentou (fato), mas a oferta do SUS não acompanhou. Isso cria um gargalo no sistema, deixando jovens sem tratamento.</p>
+                        <p style="margin-top: 1rem;">O D2 (social/tecnológico) deve usar <strong>Byung-Chul Han</strong>. A <strong>"Sociedade do cansaço" (2010)</strong> é perfeita. Argumente que o jovem está doente porque vive sob pressão constante por <strong>desempenho</strong> (no Instagram, no TikTok, no Enem). Ele não tem um "patrão" externo; ele se tornou seu próprio explorador, o que leva ao *burnout* e à depressão.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    Contextualizações para introdução
+                </h3>
+                <div class="card-grid">
+                    <div class="card"><div class="card-title">📺 Série: "13 reasons why" (2017)</div><div class="card-content">Usar com cautela, para discutir a importância (e os riscos) de abordar o suicídio juvenil.</div></div>
+                    <div class="card"><div class="card-title">💡 Conceito: FOMO (Fear of missing out)</div><div class="card-content">Explicar a ansiedade gerada pelas redes sociais (comparação, vida "perfeita") como gatilho para transtornos.</div></div>
+                    <div class="card"><div class="card-title">📊 Pós-pandemia (COVID-19)</div><div class="card-content">Contextualizar a crise de saúde mental atual como agravada pelo isolamento social e perdas do período.</div></div>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                    Tese proposta
+                </h3>
+                <div class="thesis-box">
+                    A crise de saúde mental entre jovens brasileiros, agravada pela pressão social, uso intensivo de redes sociais e sequelas da pandemia, exige abordagem multidimensional que integre educação emocional nas escolas, ampliação de serviços de apoio psicológico acessíveis e combate ao estigma associado aos transtornos mentais.
+                </div>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                    Argumentos estruturados
+                </h3>
+                <div class="argument">
+                    <div class="argument-header">Argumento 1</div>
+                    <span class="argument-category">Saúde pública</span>
+                    <p>Em primeira análise, o Sistema Único de Saúde (SUS) apresenta carência crítica de serviços especializados em saúde mental infanto-juvenil. Segundo dados do DataSUS, a demanda por atendimento psicológico cresceu exponencialmente pós-pandemia (Relatório OMS, 2022), mas a oferta permanece estagnada. Na prática, jovens em crise enfrentam filas de meses ou recorrem a soluções emergenciais inadequadas, agravando quadros que poderiam ser tratados precocemente. Portanto, essa deficiência estrutural transforma problemas tratáveis em tragédias evitáveis, falhando em garantir o direito à saúde.</p>
+                </div>
+                <div class="argument">
+                    <div class="argument-header">Argumento 2</div>
+                    <span class="argument-category">Social e tecnológico</span>
+                    <p>Paralelamente, as redes sociais amplificam padrões de comparação e o conceito de FOMO (Fear of missing out). Essa pressão por validação virtual, somada à pressão por desempenho acadêmico, cria uma geração cronicamente estressada, exatamente como analisado por Byung-Chul Han em "Sociedade do cansaço" (2010), onde o indivíduo se torna seu próprio explorador. Fica claro, assim, que o ambiente digital, sem mediação, é um vetor central da crise de saúde mental juvenil.</p>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path></svg>
+                    Proposta de intervenção
+                </h3>
+                <div class="intervention-box">
+                    <div class="intervention-item"><div class="intervention-label">Agente:</div><p>Ministério da Educação em parceria com Ministério da Saúde.</p></div>
+                    <div class="intervention-item"><div class="intervention-label">Ação:</div><p>Implementar programa nacional de educação socioemocional (resolvendo D2) e ampliar rede de apoio psicológico em escolas (resolvendo D1), conforme Lei 13.935/2019.</p></div>
+                    <div class="intervention-item"><div class="intervention-label">Meio/Modo:</div><p>Por meio da capacitação de professores em primeiros socorros psicológicos, contratação de psicólogos escolares e criação de plataforma digital de teleatendimento para jovens.</p></div>
+                    <div class="intervention-item"><div class="intervention-label">Finalidade:</div><p>Prevenir o agravamento de transtornos mentais (ansiedade, depressão) e promover um ambiente escolar acolhedor que combata a lógica do "cansaço" (Han).</p></div>
+                    <div class="intervention-item"><div class="intervention-label">Detalhamento:</div><p>A plataforma deve garantir anonimato e estar disponível 24/7, operada por profissionais de saúde mental (psicólogos e psiquiatras), oferecendo acolhimento imediato em situações de crise, similar ao modelo do CVV (Disque 188).</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="theme-section" id="theme7">
+            <div class="theme-header">
+                <span class="theme-number">07</span>
+                <h2 class="theme-title">Precarização e uberização</h2>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    Contexto e relevância
+                </h3>
+                <p>A discussão sobre os direitos de trabalhadores de aplicativos, a falta de vínculos empregatícios e a informalidade é um problema social e econômico central. Estima-se que mais de 2 milhões de brasileiros dependam de aplicativos como fonte principal de renda.</p>
+                <div>
+                    <span class="context-badge">Uberização</span>
+                    <span class="context-badge">CLT</span>
+                    <span class="context-badge">Direitos trabalhistas</span>
+                    <span class="context-badge">Precarização</span>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Repertório sociocultural
+                </h3>
+                <div class="card-grid">
+                    <div class="card"><div class="card-title">Ricardo Antunes (2018)</div><div class="card-content">"O privilégio da servidão" - Análise sobre precarização do trabalho na era digital e a "uberização" como nova forma de servidão moderna.</div></div>
+                    <div class="card"><div class="card-title">CLT (1943)</div><div class="card-content">Consolidação das leis do trabalho - Marco legal trabalhista (férias, 13º, FGTS) que é desafiado por novas formas de trabalho.</div></div>
+                    <div class="card"><div class="card-title">Breque dos apps (2020)</div><div class="card-content">Movimento grevista de entregadores que expôs condições precárias de trabalho (baixa remuneração, longas jornadas).</div></div>
+                    <div class="card"><div class="card-title">OIT - Relatório</div><div class="card-content">Organização internacional do trabalho evidencia exploração e ausência de proteção social no trabalho por plataformas (*gig economy*).</div></div>
+                    <div class="card"><div class="card-title">Conceito de pejotização</div><div class="card-content">Transformação de relações de emprego (CLT) em prestação de serviços (PJ) para burlar direitos trabalhistas.</div></div>
+                </div>
+                <div class="strategy-card">
+                    <h4 class="card-title">
+                        <svg class="icon" viewBox="0 0 24 24"><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+                        Uso estratégico do repertório
+                    </h4>
+                    <div class="card-content">
+                        <p>O repertório-chave aqui é <strong>Ricardo Antunes (2018)</strong>. O D1 (direitos) deve usar "O privilégio da servidão" para desconstruir a ideia de "autonomia". O trabalhador acha que tem o <strong>"privilégio"</strong> de ser seu chefe, mas vive uma <strong>"servidão"</strong> algorítmica: ele é punido se recusar corridas, não tem direitos (CLT) e assume todos os custos (gasolina, acidentes).</p>
+                        <p style="margin-top: 1rem;">O D2 (socioeconômico) pode usar o <strong>"Breque dos apps" (2020)</strong> como um fato histórico que *prova* a precarização. A greve não foi por luxo, foi por condições mínimas, mostrando que a "uberização" se tornou a única saída para o desemprego estrutural, aprofundando a desigualdade.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    Contextualizações para introdução
+                </h3>
+                <div class="card-grid">
+                    <div class="card"><div class="card-title">🎬 Filme: "Você não estava aqui" (2019)</div><div class="card-content">(Título original: "Sorry we missed you") Ilustra a dureza do trabalho precarizado na economia de aplicativos (entregador).</div></div>
+                    <div class="card"><div class="card-title">📜 CLT (1943)</div><div class="card-content">Contrastar as conquistas trabalhistas históricas de Getúlio Vargas com o retrocesso atual da precarização.</div></div>
+                    <div class="card"><div class="card-title">✊ Breque dos apps (2020)</div><div class="card-content">Exemplificar a resistência e organização dos trabalhadores de aplicativos por direitos mínimos.</div></div>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                    Tese proposta
+                </h3>
+                <div class="thesis-box">
+                    A uberização do trabalho no Brasil representa retrocesso nas conquistas trabalhistas históricas, mascarando relações de emprego sob aparência de autonomia e transferindo riscos e custos operacionais aos trabalhadores, o que exige regulamentação específica que garanta direitos básicos sem inviabilizar a inovação tecnológica.
+                </div>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                    Argumentos estruturados
+                </h3>
+                <div class="argument">
+                    <div class="argument-header">Argumento 1</div>
+                    <span class="argument-category">Direitos trabalhistas</span>
+                    <p>De um lado, a ausência de vínculo empregatício formal priva milhões de trabalhadores de direitos da CLT (1943), como férias e previdência. Conforme analisado por Ricardo Antunes em "O privilégio da servidão" (2018), essa precarização cria uma subclasse de trabalhadores subordinados sem proteção legal. Na prática, entregadores assumem todos os riscos (acidentes, manutenção), enquanto plataformas lucram sem responsabilidades. Isso configura, portanto, uma exploração disfarçada de empreendedorismo, que fragiliza a rede de proteção social.</p>
+                </div>
+                <div class="argument">
+                    <div class="argument-header">Argumento 2</div>
+                    <span class="argument-category">Socioeconômico</span>
+                    <p>De outro lado, a uberização aprofunda desigualdades ao ser uma válvula de escape para o desemprego estrutural. Trabalhadores sem alternativas aceitam jornadas extenuantes e remuneração variável em troca de subsistência precária, como visto no "Breque dos apps" (2020). Esse modelo, longe de promover autonomia, reproduz ciclos de pobreza e informalidade que historicamente marcam o mercado brasileiro. Assim, a suposta inovação impede a mobilidade social e perpetua a exclusão.</p>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path></svg>
+                    Proposta de intervenção
+                </h3>
+                <div class="intervention-box">
+                    <div class="intervention-item"><div class="intervention-label">Agente:</div><p>Congresso Nacional em conjunto com Ministério do Trabalho.</p></div>
+                    <div class="intervention-item"><div class="intervention-label">Ação:</div><p>Aprovar marco regulatório para trabalho em plataformas digitais garantindo direitos mínimos (resolvendo D1 e D2).</p></div>
+                    <div class="intervention-item"><div class="intervention-label">Meio/Modo:</div><p>Através de legislação que estabeleça piso remuneratório por hora trabalhada (não por corrida), contribuição previdenciária compartilhada (modelo INSS) e seguro contra acidentes.</p></div>
+                    <div class="intervention-item"><div class="intervention-label">Finalidade:</div><p>Equilibrar inovação tecnológica com proteção social, garantindo a dignidade do trabalhador (Art. 1º da CF/88).</p></div>
+                    <div class="intervention-item"><div class="intervention-label">Detalhamento:</div><p>A regulamentação deve incluir mecanismos de fiscalização efetiva (Ministério do Trabalho) e penalidades para plataformas que descumprirem as normas, garantindo a aplicação real da lei e revertendo a lógica da "servidão" citada por Antunes.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="theme-section" id="theme8">
+            <div class="theme-header">
+                <span class="theme-number">08</span>
+                <h2 class="theme-title">Inclusão de PcD</h2>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    Contexto e relevância
+                </h3>
+                <p>Apesar da legislação, o tema da acessibilidade real, seja no mercado de trabalho, nas escolas ou nas cidades, ainda é um grande desafio. A Lei Brasileira de Inclusão (2015) completa 10 anos em 2025, mas a implementação permanece deficiente.</p>
+                <div>
+                    <span class="context-badge">LBI (10 anos)</span>
+                    <span class="context-badge">Acessibilidade</span>
+                    <span class="context-badge">Lei de cotas</span>
+                    <span class="context-badge">Capacitismo</span>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Repertório sociocultural
+                </h3>
+                <div class="card-grid">
+                    <div class="card"><div class="card-title">LBI - Lei 13.146/2015</div><div class="card-content">Lei brasileira de inclusão (estatuto da pessoa com deficiência) - Marco legal para garantia de direitos.</div></div>
+                    <div class="card"><div class="card-title">Convenção da ONU (2006)</div><div class="card-content">Tratado internacional sobre direitos das PcD, ratificado pelo Brasil com status constitucional (Decreto 6.949/2009).</div></div>
+                    <div class="card"><div class="card-title">Lei de cotas (Lei 8.213/1991)</div><div class="card-content">Reserva de vagas em empresas (com 100+ funcionários) para PcD, ainda pouco cumprida.</div></div>
+                    <div class="card"><div class="card-title">Modelo social da deficiência</div><div class="card-content">Conceito (oposto ao "modelo médico") que entende a deficiência como resultado de barreiras sociais, não limitações individuais.</div></div>
+                    <div class="card"><div class="card-title">Conceito de capacitismo</div><div class="card-content">Preconceito e discriminação contra pessoas com deficiência, baseado na ideia de um corpo "padrão".</div></div>
+                </div>
+                <div class="strategy-card">
+                    <h4 class="card-title">
+                        <svg class="icon" viewBox="0 0 24 24"><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+                        Uso estratégico do repertório
+                    </h4>
+                    <div class="card-content">
+                        <p>O D1 (trabalho/preconceito) deve usar a <strong>Lei de cotas (1991)</strong> e o <strong>capacitismo</strong>. O argumento é: a lei existe há mais de 30 anos, mas não é cumprida. Por quê? Por causa do <strong>capacitismo</strong>, o preconceito estrutural que vê a PcD como "incapaz" ou "um custo". Isso prova que a lei sozinha é ineficaz.</p>
+                        <p style="margin-top: 1rem;">O D2 (acessibilidade/infraestrutura) deve usar o <strong>"Modelo social da deficiência"</strong>. Esse conceito é poderoso: ele <strong>muda o foco da culpa</strong>. O problema não é o cadeirante (limite individual), o problema é a *escada* (barreira social). Isso prova que é a *sociedade* que "incapacita" a pessoa ao não fornecer acessibilidade (rampas, calçadas, libras), violando a <strong>LBI (2015)</strong>.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    Contextualizações para introdução
+                </h3>
+                <div class="card-grid">
+                    <div class="card"><div class="card-title">🎬 Filme: "CODA" (2021)</div><div class="card-content">(No Brasil: "No ritmo do coração") Ilustrar desafios de comunicação, acessibilidade e potencialidades de PcD (no caso, surdos).</div></div>
+                    <div class="card"><div class="card-title">🏛️ Paralimpíadas</div><div class="card-content">Usar o sucesso dos atletas paralímpicos brasileiros para contrastar a visibilidade no esporte com a invisibilidade e falta de oportunidades no dia a dia.</div></div>
+                    <div class="card"><div class="card-title">📊 Dado: 1% no mercado (CAGED)</div><div class="card-content">Evidenciar exclusão trabalhista - PcD ocupam cerca de 1% dos postos de trabalho formais, apesar da Lei de cotas (1991).</div></div>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                    Tese proposta
+                </h3>
+                <div class="thesis-box">
+                    A inclusão efetiva de pessoas com deficiência no Brasil permanece como desafio estrutural que transcende marcos legais, exigindo transformação cultural (combate ao capacitismo), investimento em acessibilidade urbana e fiscalização rigorosa do cumprimento de cotas no mercado de trabalho para que a cidadania plena seja realidade e não apenas promessa constitucional.
+                </div>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                    Argumentos estruturados
+                </h3>
+                <div class="argument">
+                    <div class="argument-header">Argumento 1</div>
+                    <span class="argument-category">Mercado de trabalho</span>
+                    <p>Primeiramente, apesar da Lei de cotas (1991), a inserção de PcD no mercado formal permanece ínfima. Na prática, empresas preferem pagar multas a contratar, e muitas que o fazem praticam o "capacitismo", relegando esses profissionais a funções subalternas. Essa exclusão laboral não apenas viola a LBI (2015), mas perpetua a dependência econômica e nega a autonomia a milhões de brasileiros capacitados, demonstrando que a lei por si só é insuficiente sem fiscalização e mudança cultural.</p>
+                </div>
+                <div class="argument">
+                    <div class="argument-header">Argumento 2</div>
+                    <span class="argument-category">Acessibilidade urbana</span>
+                    <p>Além disso, as cidades brasileiras permanecem hostis às pessoas com deficiência, com calçadas irregulares, transporte público inadequado e falta de sinalização tátil ou sonora. Essas barreiras arquitetônicas transformam o ato de locomover-se em desafio diário, segregando PcD do convívio social. Isso reforça o "modelo social da deficiência", que entende que são as barreiras (sociais e físicas), e não as limitações individuais, que incapacitam. Fica evidente, portanto, a falha do Estado em garantir o direito de ir e vir.</p>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path></svg>
+                    Proposta de intervenção
+                </h3>
+                <div class="intervention-box">
+                    <div class="intervention-item"><div class="intervention-label">Agente:</div><p>Ministério dos Direitos Humanos e Cidadania em parceria com Ministério das Cidades.</p></div>
+                    <div class="intervention-item"><div class="intervention-label">Ação:</div><p>Intensificar fiscalização da Lei de cotas (resolvendo D1) e criar programa nacional de "Cidades acessíveis" (resolvendo D2).</p></div>
+                    <div class="intervention-item"><div class="intervention-label">Meio/Modo:</div><p>Por meio de aumento de multas para empresas que descumprem cotas (combate ao capacitismo), incentivos fiscais para adaptações e estabelecimento de prazos para adequação de calçadas e transporte (modelo social).</p></div>
+                    <div class="intervention-item"><div class="intervention-label">Finalidade:</div><p>Garantir inclusão real de PcD no mercado de trabalho e na vida urbana, efetivando a LBI (2015).</p></div>
+                    <div class="intervention-item"><div class="intervention-label">Detalhamento:</div><p>Os recursos das multas aplicadas às empresas (pela falta de cotas) devem ser direcionados a um fundo específico para financiar obras de acessibilidade em espaços públicos, criando um ciclo virtuoso de fiscalização e investimento.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="theme-section" id="theme9">
+            <div class="theme-header">
+                <span class="theme-number">09</span>
+                <h2 class="theme-title">Combate à desinformação</h2>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    Contexto e relevância
+                </h3>
+                <p>Um tema recorrente que une tecnologia e cidadania, questionando como garantir o acesso à informação de qualidade. As eleições de 2024 evidenciaram novamente os riscos da desinformação massiva para a democracia.</p>
+                <div>
+                    <span class="context-badge">Fake news</span>
+                    <span class="context-badge">Democracia</span>
+                    <span class="context-badge">Pós-verdade</span>
+                    <span class="context-badge">Algoritmos</span>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Repertório sociocultural
+                </h3>
+                <div class="card-grid">
+                    <div class="card"><div class="card-title">Umberto Eco (2015)</div><div class="card-content">Conceito do "Idiota da aldeia" - Análise crítica sobre como a internet deu voz a "legiões de imbecis" com o mesmo peso de especialistas.</div></div>
+                    <div class="card"><div class="card-title">Marco civil da internet (Lei 12.965/2014)</div><div class="card-content">Estabelece princípios, garantias e direitos para uso da internet no Brasil (base da regulação).</div></div>
+                    <div class="card"><div class="card-title">PL das fake news (PL 2630/2020)</div><div class="card-content">Projeto que busca regulamentar redes sociais, combater desinformação e responsabilizar plataformas.</div></div>
+                    <div class="card"><div class="card-title">Conceito de pós-verdade (c. 2016)</div><div class="card-content">Fenômeno onde fatos objetivos têm menos influência que apelos emocionais e crenças pessoais (Dicionário Oxford).</div></div>
+                    <div class="card"><div class="card-title">Escândalo: Cambridge Analytica (2018)</div><div class="card-content">Caso de manipulação de dados de milhões de usuários do Facebook para influenciar eleições (EUA, Brexit).</div></div>
+                </div>
+                <div class="strategy-card">
+                    <h4 class="card-title">
+                        <svg class="icon" viewBox="0 0 24 24"><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+                        Uso estratégico do repertório
+                    </h4>
+                    <div class="card-content">
+                        <p>O D1 (democracia) deve usar <strong>Umberto Eco (2015)</strong> e <strong>pós-verdade (2016)</strong>. O argumento: a internet, segundo Eco, deu o mesmo espaço a um "idiota da aldeia" e a um Prêmio Nobel. No ambiente de pós-verdade, as pessoas preferem a *fake news* que confirma sua crença do que o *fato* que a desafia. Isso destrói o debate público e corrói a democracia.</p>
+                        <p style="margin-top: 1rem;">O D2 (tecnologia/economia) deve usar <strong>Cambridge Analytica (2018)</strong>. O argumento: a desinformação não é só "gente mentindo", é um *modelo de negócio*. As plataformas lucram com o engajamento, e *fake news* geram mais engajamento (raiva, medo). O caso da C. Analytica prova que isso é usado para manipular eleições, exigindo o <strong>PL 2630/2020</strong>.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    Contextualizações para introdução
+                </h3>
+                <div class="card-grid">
+                    <div class="card"><div class="card-title">🎬 Doc: "Privacidade hackeada" (2019)</div><div class="card-content">Ilustra o escândalo da Cambridge Analytica e a manipulação de dados para fins eleitorais.</div></div>
+                    <div class="card"><div class="card-title">💡 Câmaras de eco (bolhas)</div><div class="card-content">Explicar como algoritmos de redes sociais reforçam crenças e isolam usuários de visões divergentes.</div></div>
+                    <div class="card"><div class="card-title">📰 Ataque ao Capitólio (EUA, 2021)</div><div class="card-content">Demonstrar as consequências reais e físicas da desinformação massiva na estabilidade democrática.</div></div>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                    Tese proposta
+                </h3>
+                <div class="thesis-box">
+                    A proliferação de desinformação nas redes sociais representa ameaça concreta à democracia brasileira, exigindo equilíbrio delicado entre liberdade de expressão e responsabilização de plataformas digitais, além de investimento em educação midiática que capacite cidadãos a discernir informação de qualidade de conteúdo manipulado.
+                </div>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                    Argumentos estruturados
+                </h3>
+                <div class="argument">
+                    <div class="argument-header">Argumento 1</div>
+                    <span class="argument-category">Democracia</span>
+                    <p>Em primeiro lugar, a desinformação massiva corrói os pilares democráticos ao contaminar debates públicos. Conforme alertou Umberto Eco (2015), as redes deram voz a "legiões" que disseminam inverdades com alcance equivalente a fontes confiáveis. No contexto da "pós-verdade", algoritmos amplificam conteúdos sensacionalistas — pois geram mais engajamento — independentemente de veracidade. Isso cria "câmaras de eco" que polarizam a sociedade e minam os consensos básicos necessários ao funcionamento da democracia.</p>
+                </div>
+                <div class="argument">
+                    <div class="argument-header">Argumento 2</div>
+                    <span class="argument-category">Tecnológico e social</span>
+                    <p>Em segundo lugar, as plataformas digitais, em seu modelo de negócios, lucram com o engajamento, priorizando conteúdos que geram reações intensas, que frequentemente são *fake news*. O escândalo da Cambridge Analytica (2018) expôs como dados pessoais são instrumentalizados para manipulação política. A ausência de regulamentação adequada no Brasil, com o PL 2630/2020 ainda em tramitação, permite que empresas operem sem responsabilização. Elas se tornam, assim, vetores de desinformação que ameaçam a saúde pública e a estabilidade institucional.</p>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path></svg>
+                    Proposta de intervenção
+                </h3>
+                <div class="intervention-box">
+                    <div class="intervention-item"><div class="intervention-label">Agente:</div><p>Ministério da Educação em parceria com o Congresso Nacional.</p></div>
+                    <div class="intervention-item"><div class="intervention-label">Ação:</div><p>Implementar programa nacional de educação midiática (resolvendo D1) e aprovar a regulamentação de plataformas digitais (resolvendo D2).</p></div>
+                    <div class="intervention-item"><div class="intervention-label">Meio/Modo:</div><p>Através da inclusão de letramento digital no currículo escolar (BNCC) e da aprovação do PL 2630/2020 (exigindo transparência algorítmica e responsabilização das plataformas por impulsionamento de desinformação).</p></div>
+                    <div class="intervention-item"><div class="intervention-label">Finalidade:</div><p>Capacitar cidadãos para o consumo crítico de informação (combatendo a "pós-verdade") e responsabilizar plataformas pela disseminação de desinformação (regulando o modelo de negócio).</p></div>
+                    <div class="intervention-item"><div class="intervention-label">Detalhamento:</div><p>O programa de educação midiática deve ensinar técnicas de verificação de fontes (checagem reversa de imagem) e compreensão sobre como funcionam as "câmaras de eco" algorítmicas, formando cidadãos digitalmente alfabetizados desde o ensino fundamental.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="theme-section" id="theme10">
+            <div class="theme-header">
+                <span class="theme-number">10</span>
+                <h2 class="theme-title">Violência nas escolas</h2>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    Contexto e relevância
+                </h3>
+                <p>Ligado ao tema da juventude (ECA), o aumento de casos de bullying e violência no ambiente escolar exige um debate sobre soluções e prevenção. Ataques a escolas em 2023 e 2024 chocaram o Brasil e evidenciaram urgência do tema.</p>
+                <div>
+                    <span class="context-badge">Bullying</span>
+                    <span class="context-badge">Cultura de paz</span>
+                    <span class="context-badge">Segurança escolar</span>
+                    <span class="context-badge">ECA</span>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Repertório sociocultural
+                </h3>
+                <div class="card-grid">
+                    <div class="card"><div class="card-title">ECA (Lei 8.069/1990)</div><div class="card-content">Completando 35 anos em 2025, estabelece proteção integral a crianças e adolescentes (Art. 227 da CF/88).</div></div>
+                    <div class="card"><div class="card-title">Hannah Arendt (1963)</div><div class="card-content">Conceito de "Banalidade do mal" (do livro "Eichmann em Jerusalém") - Aplicável à naturalização da violência cotidiana (bullying).</div></div>
+                    <div class="card"><div class="card-title">Lei nº 13.185/2015</div><div class="card-content">Programa de combate à intimidação sistemática (bullying) - Marco legal que exige ações de prevenção nas escolas.</div></div>
+                    <div class="card"><div class="card-title">Teoria das janelas quebradas (1982)</div><div class="card-content">Conceito criminológico (Wilson/Kelling) que explica como pequenas desordens (bullying), se ignoradas, escalam para violências maiores.</div></div>
+                    <div class="card"><div class="card-title">Marshall Rosenberg (1999)</div><div class="card-content">"Comunicação não-violenta" - Metodologia para resolução de conflitos baseada em empatia, necessidades e diálogo.</div></div>
+                </div>
+                <div class="strategy-card">
+                    <h4 class="card-title">
+                        <svg class="icon" viewBox="0 0 24 24"><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+                        Uso estratégico do repertório
+                    </h4>
+                    <div class="card-content">
+                        <p>O D1 (causas/escalada) deve usar <strong>Hannah Arendt (1963)</strong> e a <strong>Lei do bullying (2015)</strong>. Argumente que o bullying é a "pequena violência" que é tratada como "brincadeira". Essa é a <strong>"Banalidade do mal"</strong>: a violência se torna burocrática, diária, e é ignorada. A Lei de 2015 existe, mas não é aplicada, o que permite a escalada.</p>
+                        <p style="margin-top: 1rem;">O D2 (soluções/prevenção) deve focar na falha da abordagem. A escola é punitiva (suspende, expulsa), mas não resolve o conflito. A solução é a <strong>"Comunicação não-violenta" (1999)</strong>, de Marshall Rosenberg. Ela propõe substituir a punição pelo diálogo, pela escuta das necessidades e pela prática da empatia, promovendo uma real <strong>cultura de paz (UNESCO)</strong>.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    Contextualizações para introdução
+                </h3>
+                <div class="card-grid">
+                    <div class="card"><div class="card-title">🎬 Filme: "Elefante" (2003)</div><div class="card-content">Reflexão sobre a apatia, o bullying e os sinais prévios que levam a um ato de violência extrema em uma escola (baseado em Columbine).</div></div>
+                    <div class="card"><div class="card-title">📰 Ataques a escolas (2023-2024)</div><div class="card-content">Evidenciar urgência do tema com casos recentes no Brasil (Blumenau, São Paulo) que geraram pânico social.</div></div>
+                    <div class="card"><div class="card-title">🕊️ Cultura de paz (UNESCO)</div><div class="card-content">Apresentar o conceito da UNESCO (promover valores, atitudes e comportamentos) como alternativa construtiva à violência.</div></div>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                    Tese proposta
+                </h3>
+                <div class="thesis-box">
+                    A escalada da violência no ambiente escolar brasileiro, evidenciada por casos de bullying, agressões e ataques, demanda abordagem sistêmica que integre educação socioemocional, fortalecimento de vínculos comunitários, apoio psicológico especializado e transformação cultural que substitua lógicas punitivas por práticas restaurativas e preventivas.
+                </div>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                    Argumentos estruturados
+                </h3>
+                <div class="argument">
+                    <div class="argument-header">Argumento 1</div>
+                    <span class="argument-category">Educacional e saúde mental</span>
+                    <p>Inicialmente, a ausência de suporte psicológico adequado nas escolas impede a identificação precoce de estudantes em sofrimento. Conforme a teoria das "janelas quebradas" (1982), pequenas violências normalizadas — como o bullying (Lei 13.185/2015) — criam um ambiente que legitima agressões maiores. As escolas brasileiras carecem de psicólogos e assistentes sociais (Lei 13.935/2019), deixando problemas se agravarem até tragédias evitáveis, o que expõe uma falha na proteção integral prevista pelo ECA (1990).</p>
+                </div>
+                <div class="argument">
+                    <div class="argument-header">Argumento 2</div>
+                    <span class="argument-category">Social e cultural</span>
+                    <p>Ademais, a "cultura de paz" (UNESCO) contrasta com valores violentos perpetuados por mídias e discursos que glorificam a agressão. A "banalidade do mal", conceito de Hannah Arendt (1963), aplica-se aqui, pois a violência cotidiana (bullying) se naturaliza. Desse modo, sem uma educação que promova ativamente a empatia e a "Comunicação não-violenta" (Rosenberg, 1999), as escolas acabam reproduzindo preconceitos que alimentam o ciclo de exclusão e, em casos extremos, a violência letal.</p>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path></svg>
+                    Proposta de intervenção
+                </h3>
+                <div class="intervention-box">
+                    <div class="intervention-item"><div class="intervention-label">Agente:</div><p>Ministério da Educação em conjunto com Ministério da Saúde e Secretarias Estaduais de Educação.</p></div>
+                    <div class="intervention-item"><div class="intervention-label">Ação:</div><p>Implementar programa nacional de cultura de paz nas escolas, com foco em saúde mental (resolvendo D1) e práticas restaurativas (resolvendo D2).</p></div>
+                    <div class="intervention-item"><div class="intervention-label">Meio/Modo:</div><p>Por meio da contratação efetiva de psicólogos e assistentes sociais (cumprindo a Lei 13.935/2019) e da capacitação de professores em mediação de conflitos (baseada na Comunicação não-violenta de Rosenberg).</p></div>
+                    <div class="intervention-item"><div class="intervention-label">Finalidade:</div><p>Prevenir violências (combatendo a "banalidade do mal" citada por Arendt), promover convivência respeitosa e criar ambientes escolares seguros.</p></div>
+                    <div class="intervention-item"><div class="intervention-label">Detalhamento:</div><p>A capacitação em mediação deve incluir "círculos restaurativos" para substituir punições meramente disciplinares (suspensão), promovendo diálogo entre envolvidos (agressor, vítima, comunidade), responsabilização mútua e reparação de danos, quebrando ciclos de violência.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="theme-section" id="summary">
+            <div class="theme-header">
+                <span class="theme-number">
+    <svg class="icon" viewBox="0 0 24 24" style="width: 3rem; height: 3rem; stroke: currentColor; fill: none; stroke-width: 2.5;">
+        <line x1="18" y1="20" x2="18" y2="10"></line>
+        <line x1="12" y1="20" x2="12" y2="4"></line>
+        <line x1="6" y1="20" x2="6" y2="14"></line>
+    </svg>
+</span>
+                <h2 class="theme-title">Resumo comparativo - todos os temas</h2>
+            </div>
+
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                    Análise por urgência e relevância
+                </h3>
+                
+                <div class="tips-box" style="background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%); border-left-color: #dc2626;">
+                    <div class="tips-title" style="color: #7f1d1d;">
+                        <svg class="icon" viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
+                        Crítica (quentíssimo!)
+                    </div>
+                    <ul class="tips-list" style="list-style-type: none;">
+                        <li style="color: #7f1d1d;">🌍 <strong>Tema 2:</strong> Emergência climática no Brasil (COP30 Belém 2025)</li>
+                    </ul>
+                </div>
+
+                <div class="tips-box" style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);">
+                    <div class="tips-title" style="color: #92400e;">
+                        <svg class="icon" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                        Muito alta (foco total)
+                    </div>
+                    <ul class="tips-list" style="list-style-type: none;">
+                        <li style="color: #78350f;">📱 <strong>Tema 1:</strong> Proteção de crianças na era digital (ECA 35 anos)</li>
+                        <li style="color: #78350f;">🤖 <strong>Tema 4:</strong> Inteligência artificial (revolução tecnológica)</li>
+                        <li style="color: #78350f;">🧠 <strong>Tema 6:</strong> Saúde mental entre jovens (crise pós-pandemia)</li>
+                        <li style="color: #78350f;">📰 <strong>Tema 9:</strong> Combate à desinformação (ameaça democrática)</li>
+                        <li style="color: #78350f;">🏫 <strong>Tema 10:</strong> Violência nas escolas (casos recentes)</li>
+                    </ul>
+                </div>
+
+                <div class="tips-box" style="background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%); border-left-color: #2563eb;">
+                    <div class="tips-title" style="color: #1e3a8a;">
+                        <svg class="icon" viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                        Alta (temas sociais fortes)
+                    </div>
+                    <ul class="tips-list" style="list-style-type: none;">
+                        <li style="color: #1e40af;">🎰 <strong>Tema 3:</strong> Vício em apostas online (fenômeno crescente)</li>
+                        <li style="color: #1e40af;">👴 <strong>Tema 5:</strong> Envelhecimento populacional (transição demográfica)</li>
+                        <li style="color: #1e40af;">🚗 <strong>Tema 7:</strong> Precarização e uberização (direitos trabalhistas)</li>
+                        <li style="color: #1e40af;">♿ <strong>Tema 8:</strong> Inclusão de PcD (LBI 10 anos)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                    Ranking de probabilidade Enem 2025
+                </h3>
+                
+                <table class="summary-table">
+                    <thead>
+                        <tr>
+                            <th>Ranking</th>
+                            <th>Tema</th>
+                            <th>Probabilidade</th>
+                            <th>Justificativa principal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>1º</strong></td>
+                            <td>Emergência climática</td>
+                            <td>🔥 Muito alta</td>
+                            <td>COP30 em Belém (nov/2025) + eventos extremos recentes no Brasil</td>
+                        </tr>
+                        <tr>
+                            <td><strong>2º</strong></td>
+                            <td>Proteção digital de crianças</td>
+                            <td>🔥 Muito alta</td>
+                            <td>35 anos do ECA + debates sobre ECA Digital e regulação de redes</td>
+                        </tr>
+                        <tr>
+                            <td><strong>3º</strong></td>
+                            <td>Saúde mental jovem</td>
+                            <td>⚡ Alta</td>
+                            <td>Crise pós-pandemia persistente + pressão nas redes sociais</td>
+                        </tr>
+                        <tr>
+                            <td><strong>4º</strong></td>
+                            <td>Inteligência artificial</td>
+                            <td>⚡ Alta</td>
+                            <td>Revolução tecnológica em curso + impactos no trabalho e ética</td>
+                        </tr>
+                        <tr>
+                            <td><strong>5º</strong></td>
+                            <td>Desinformação</td>
+                            <td>⚡ Alta</td>
+                            <td>Ameaça contínua à democracia + debates sobre regulação</td>
+                        </tr>
+                        <tr>
+                            <td><strong>6º</strong></td>
+                            <td>Violência escolar</td>
+                            <td>📌 Média-alta</td>
+                            <td>Casos recentes geraram debate público intenso</td>
+                        </tr>
+                        <tr>
+                            <td><strong>7º</strong></td>
+                            <td>Apostas online</td>
+                            <td>📌 Média</td>
+                            <td>Fenômeno novo, crescente e com impactos sociais evidentes</td>
+                        </tr>
+                        <tr>
+                            <td><strong>8º</strong></td>
+                            <td>Uberização</td>
+                            <td>📌 Média</td>
+                            <td>Precarização trabalhista contínua + debates sobre regulação</td>
+                        </tr>
+                        <tr>
+                            <td><strong>9º</strong></td>
+                            <td>Envelhecimento</td>
+                            <td>📍 Média-baixa</td>
+                            <td>Tema estrutural de longo prazo, menos urgente no debate atual</td>
+                        </tr>
+                        <tr>
+                            <td><strong>10º</strong></td>
+                            <td>Inclusão PcD</td>
+                            <td>📍 Média-baixa</td>
+                            <td>Tema importante mas já abordado anteriormente pelo Enem</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                    Estratégia de preparação otimizada
+                </h3>
+                
+                <div class="card-grid">
+                    <div class="card" style="border-left-color: #8b5cf6;">
+                        <div class="card-title" style="color: #8b5cf6;">
+                            <svg class="icon" viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
+                            Grupo prioritário
+                        </div>
+                        <div class="card-content">
+                            <strong>Estude com profundidade:</strong><br>
+                            • Tema 1 (proteção digital)<br>
+                            • Tema 2 (clima)<br>
+                            • Tema 6 (saúde mental)<br>
+                            • Tema 9 (desinformação)
+                        </div>
+                    </div>
+
+                    <div class="card" style="border-left-color: #f59e0b;">
+                        <div class="card-title" style="color: #f59e0b;">
+                            <svg class="icon" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                            Grupo secundário
+                        </div>
+                        <div class="card-content">
+                            <strong>Estude moderadamente:</strong><br>
+                            • Tema 4 (IA)<br>
+                            • Tema 10 (violência escolar)<br>
+                            • Tema 3 (apostas)
+                        </div>
+                    </div>
+
+                    <div class="card" style="border-left-color: #06b6d4;">
+                        <div class="card-title" style="color: #06b6d4;">
+                            <svg class="icon" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                            Grupo de apoio
+                        </div>
+                        <div class="card-content">
+                            <strong>Tenha noção básica:</strong><br>
+                            • Tema 5 (envelhecimento)<br>
+                            • Tema 7 (uberização)<br>
+                            • Tema 8 (inclusão PcD)
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    Repertórios versáteis (use em múltiplos temas)
+                </h3>
+                
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-title">
+                            <svg class="icon" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                            Constituição federal (1988)
+                        </div>
+                        <div class="card-content">Art. 5º (igualdade), Art. 6º (direitos sociais), Art. 196 (saúde), Art. 205 (educação), Art. 227 (crianças).</div>
+                    </div>
+                    <div class="card">
+                        <div class="card-title">
+                            <svg class="icon" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                            Zygmunt Bauman (2000)
+                        </div>
+                        <div class="card-content">"Modernidade líquida" - Serve para temas sobre tecnologia, consumo, relações sociais voláteis.</div>
+                    </div>
+                    <div class="card">
+                        <div class="card-title">
+                            <svg class="icon" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+                            IBGE
+                        </div>
+                        <div class="card-content">Dados demográficos (PNAD), econômicos (IPCA) e sociais - Use em praticamente qualquer tema.</div>
+                    </div>
+                    <div class="card">
+                        <div class="card-title">
+                            <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                            ONU/OMS
+                        </div>
+                        <div class="card-content">Relatórios, convenções e dados internacionais - Repertório de peso (Ex: DUDH, 1948).</div>
+                    </div>
+                    <div class="card">
+                        <div class="card-title">
+                            <svg class="icon" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                            Byung-Chul Han (2010)
+                        </div>
+                        <div class="card-content">"Sociedade do cansaço" - Ótimo para saúde mental, tecnologia, trabalho (autoexploração).</div>
+                    </div>
+                    <div class="card">
+                        <div class="card-title">
+                            <svg class="icon" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                            Hannah Arendt (1963)
+                        </div>
+                        <div class="card-content">"Banalidade do mal" - Serve para violência, ética, política (naturalização da crueldade).</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="theme-section" id="dicas">
+            <div class="theme-header">
+                <span class="theme-number">
+     <svg class="icon" viewBox="0 0 24 24" style="width: 3rem; height: 3rem; fill: currentColor; stroke: currentColor; stroke-width: 1;">
+        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+    </svg>
+</span>
+                <h2 class="theme-title">Dicas de ouro para a redação Enem</h2>
+            </div>
+
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-8.81"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    O que sempre fazer (seu checklist do 1000)
+                </h3>
+                <div class="tips-box" style="background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%); border-left-color: #059669;">
+                    <ul class="tips-list">
+                        <li style="color: #065f46;">
+                            <svg class="icon" style="stroke: #059669;" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                            Ler atentamente os textos motivadores (eles dão o rumo!).
+                        </li>
+                        <li style="color: #065f46;">
+                            <svg class="icon" style="stroke: #059669;" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                            Planejar antes de escrever (5-10 min para o projeto de texto).
+                        </li>
+                        <li style="color: #065f46;">
+                            <svg class="icon" style="stroke: #059669;" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                            Usar conectivos variados (inicie parágrafos e frases com eles).
+                        </li>
+                        <li style="color: #065f46;">
+                            <svg class="icon" style="stroke: #059669;" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                            Citar repertórios de forma integrada (use o repertório para PROVAR seu ponto).
+                        </li>
+                        <li style="color: #065f46;">
+                            <svg class="icon" style="stroke: #059669;" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                            Propor intervenção viável e detalhada (os 5 elementos!).
+                        </li>
+                        <li style="color: #065f46;">
+                            <svg class="icon" style="stroke: #059669;" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                            Revisar ortografia e pontuação (não perca ponto!).
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                    O que nunca fazer (fuga do zero)
+                </h3>
+                <div class="tips-box" style="background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%); border-left-color: #dc2626;">
+                    <ul class="tips-list">
+                        <li style="color: #7f1d1d;">
+                            <svg class="icon" style="stroke: #dc2626;" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                            Copiar trechos dos textos motivadores (seja original).
+                        </li>
+                        <li style="color: #7f1d1d;">
+                            <svg class="icon" style="stroke: #dc2626;" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                            Usar exemplos pessoais ("eu acho que...", "na minha família...").
+                        </li>
+                        <li style="color: #7f1d1d;">
+                            <svg class="icon" style="stroke: #dc2626;" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                            Propor intervenção genérica ("o governo deve conscientizar").
+                        </li>
+                        <li style="color: #7f1d1d;">
+                            <svg class="icon" style="stroke: #dc2626;" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                            Ferir direitos humanos (respeito sempre!).
+                        </li>
+                        <li style="color: #7f1d1d;">
+                            <svg class="icon" style="stroke: #dc2626;" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                            Escrever em primeira pessoa (use "nota-se que...", "é evidente...").
+                        </li>
+                        <li style="color: #7f1d1d;">
+                            <svg class="icon" style="stroke: #dc2626;" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                            Usar linguagem informal ou gírias ("tipo assim", "né").
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg>
+                    Estrutura da redação (o molde do 900+)
+                </h3>
+                
+                <div class="argument" style="border-color: #8b5cf6;">
+                    <div class="argument-header" style="color: #8b5cf6;">
+                        Introdução (o cartão de visita)
+                    </div>
+                    <p><strong>1. Contextualize:</strong> Comece com um filme, livro, fato histórico ou conceito (repertório).<br>
+                    <strong>2. Apresente o problema:</strong> Ligue o repertório ao tema exato da proposta, mostrando a situação no Brasil.<br>
+                    <strong>3. Defina sua tese:</strong> Deixe claro seu ponto de vista. (Ex: "isso ocorre por causa de A e B").</p>
+                </div>
+
+                <div class="argument" style="border-color: #f59e0b;">
+                    <div class="argument-header" style="color: #f59e0b;">
+                        Desenvolvimento 1 (seu argumento A)
+                    </div>
+                    <p><strong>1. Tópico frasal:</strong> Afirme a ideia A (Ex: "primeiramente, a causa A é um grande impasse...").<br>
+                    <strong>2. Explique e comprove:</strong> Use um novo repertório (dado, citação, lei) para provar sua afirmação.<br>
+                    <strong>3. Analise (seja crítico):</strong> Mostre as consequências desse problema na prática.<br>
+                    <strong>4. Feche a ideia:</strong> Conclua o parágrafo reforçando seu ponto de vista.</p>
+                </div>
+
+                <div class="argument" style="border-color: #06b6d4;">
+                    <div class="argument-header" style="color: #06b6d4;">
+                        Desenvolvimento 2 (seu argumento B)
+                    </div>
+                    <p><strong>1. Tópico frasal (com conectivo):</strong> Afirme a ideia B (Ex: "além disso, a consequência B agrava o cenário...").<br>
+                    <strong>2. Explique e comprove:</strong> Use outro repertório para validar o argumento B.<br>
+                    <strong>3. Analise (seja crítico):</strong> Mostre o impacto desse segundo ponto na sociedade.<br>
+                    <strong>4. Feche a ideia:</strong> Conclua, ligando de volta à tese central.</p>
+                </div>
+
+                <div class="argument" style="border-color: #10b981;">
+                    <div class="argument-header" style="color: #10b981;">
+                        Conclusão (a solução detalhada)
+                    </div>
+                    <p><strong>1. Retome a tese:</strong> Comece com "portanto, medidas são necessárias para...".<br>
+                    <strong>2. Agente:</strong> Quem vai fazer? (Ex: "o Ministério da Educação...").<br>
+                    <strong>3. Ação:</strong> Vai fazer o quê? (Ex: "...deve criar um programa...").<br>
+                    <strong>4. Meio/Modo:</strong> Como será feito? (Ex: "...por meio de oficinas nas escolas...").<br>
+                    <strong>5. Finalidade:</strong> Para que serve? (Ex: "...a fim de reduzir o problema X.").<br>
+                    <strong>6. Detalhamento:</strong> Explique um dos elementos (Ex: "essas oficinas deverão...").</p>
+                </div>
+                
+                <div class="pro-tip-box">
+                    <h4 class="tips-title">
+                        <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                        Dica de ouro (proposta espelhada)
+                    </h4>
+                    <ul class="tips-list">
+                        <li>
+                            <svg class="icon" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            Sua proposta de intervenção precisa "espelhar" seus argumentos. Se você argumentou no D1 sobre "falta de fiscalização" e no D2 sobre "preconceito social", sua proposta DEVE ter uma ação de "aumento de fiscalização" E uma ação de "combate ao preconceito" (via educação, por exemplo). Isso mostra um projeto de texto perfeito (competência III) e garante o 1000.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3 class="subsection-title">
+                    <svg class="icon" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    Mensagem final
+                </h3>
+                <div class="thesis-box" style="background: var(--gradient-1); font-size: 1.2rem; text-align: center; padding: 3rem;">
+                    <p style="font-size: 1.4rem; font-weight: 700; margin-bottom: 1rem;">
+                        "O segredo não é estudar TODOS os temas superficialmente,<br>
+                        mas dominar 4-5 eixos temáticos profundamente!"
+                    </p>
+                    <p style="font-size: 1.1rem; opacity: 0.95;">
+                        A redação vale 1000 pontos (20% da nota total) e é sua maior chance de aumentar a média.<br>
+                        Treine a estrutura toda semana, domine os conectivos e confie no seu preparo!
+                    </p>
+                    <p style="font-size: 1.3rem; font-weight: 700; margin-top: 2rem;">
+                        🚀 Sua aprovação começa aqui!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div style="text-align: center; padding: 3rem 0; color: #64748b;">
+            <p style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">
+                <svg class="icon" style="width: 20px; height: 20px; display: inline-block; vertical-align: middle;" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                E-book: 10 Supertemas ENEM 2025 - versão completa premium
+            </p>
+            <p style="font-size: 0.95rem;">Prof. Jozimar Bernardo</p>
+            <p style="font-size: 0.85rem; margin-top: 1rem;">© 2025 - material didático protegido por direitos autorais</p>
+        </div>
+    </div> 
+    
+    <script>
+        // Smooth scroll to theme
+        function scrollToTheme(number) {
+            const element = document.getElementById('theme' + number);
+            if (element) element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+        // Scroll to top
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        // Progress bar e Back to Top
+        window.addEventListener('scroll', () => {
+            const windowHeight = window.innerHeight;
+            const documentHeight = document.documentElement.scrollHeight - windowHeight;
+            const scrolled = window.scrollY;
+            const progress = (scrolled / documentHeight) * 100;
+            document.getElementById('progressBar').style.width = progress + '%';
+            
+            const backToTop = document.getElementById('backToTop');
+            const floatingNav = document.getElementById('floatingNav'); // JS DO NOVO MENU
+            
+            if (scrolled > 500) {
+                backToTop.classList.add('visible');
+                floatingNav.classList.add('visible'); // JS DO NOVO MENU
+            } else {
+                backToTop.classList.remove('visible');
+                floatingNav.classList.remove('visible'); // JS DO NOVO MENU
+            }
+        });
+        
+        // (O script de animação 'observer' é omitido aqui por brevidade, mas está no arquivo original)
+        // Script de animação 'observer' (Copiei do seu arquivo original 'ebook_enem_2025.html' para garantir que funcione)
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.theme-section, .card, .argument').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'all 0.6s ease-out';
+            observer.observe(el);
+        });
+
+        /* ================================================================
+        NOVO JAVASCRIPT: Funcionalidade do Menu Toggle Mobile
+        ================================================================
+        */
+        const nav = document.getElementById('floatingNav');
+        const toggleBtn = document.getElementById('mobileToggleBtn');
+        
+        // Verifica se o botão existe antes de adicionar ouvintes
+        if (toggleBtn) {
+            const menuIcon = toggleBtn.querySelector('.menu-icon');
+            const closeIcon = toggleBtn.querySelector('.close-icon');
+
+            toggleBtn.addEventListener('click', () => {
+                nav.classList.toggle('active');
+
+                if (nav.classList.contains('active')) {
+                    menuIcon.style.display = 'none';
+                    closeIcon.style.display = 'block';
+                } else {
+                    menuIcon.style.display = 'block';
+                    closeIcon.style.display = 'none';
+                }
+            });
+            
+            // Fecha o menu depois que o usuário clica em um link (no mobile)
+            document.querySelectorAll('.floating-nav a').forEach(link => {
+                link.addEventListener('click', () => {
+                     // Só executa a ação de fechar se estiver em tela mobile
+                     if (window.innerWidth <= 900) { 
+                         nav.classList.remove('active');
+                         menuIcon.style.display = 'block';
+                         closeIcon.style.display = 'none';
+                     }
+                });
+            });
+        }
+
+    </script>
+</body>
+</html>
